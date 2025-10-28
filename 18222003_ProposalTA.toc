@@ -1,0 +1,149 @@
+\babel@toc {indonesian}{}\relax 
+\contentsline {chapter}{DAFTAR GAMBAR}{iv}{figure.caption.1}%
+\contentsline {chapter}{DAFTAR TABEL}{v}{figure.caption.1}%
+\contentsline {chapter}{\centering \normalsize DAFTAR KODE}{vi}{chapter*.2}%
+\contentsline {chapter}{\numberline {I}PENDAHULUAN}{1}{chapter.1}%
+\contentsline {section}{\numberline {I.1}Latar Belakang}{1}{section.1.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {I.2}Rumusan Masalah}{3}{section.1.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {I.3}Tujuan}{4}{section.1.3}%
+\contentsline {section}{\numberline {I.4}Batasan Masalah}{4}{section.1.4}%
+\contentsline {section}{\numberline {I.5}Metodologi}{5}{section.1.5}%
+\contentsline {subsection}{\numberline {I.5.1}Studi Literatur}{5}{subsection.1.5.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {I.5.2}Analisis Kebutuhan dan Perancangan Sistem}{6}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {I.5.3}Implementasi Sistem}{6}{subsection.1.5.3}%
+\contentsline {subsection}{\numberline {I.5.4}Validasi dan Evaluasi}{7}{subsection.1.5.4}%
+\contentsline {chapter}{\numberline {II}STUDI LITERATUR}{8}{chapter.2}%
+\contentsline {section}{\numberline {II.1}Penulisan Gambar, Tabel, Rumus, dan Kode}{8}{section.2.1}%
+\contentsline {subsubsection}{\numberline {II.1.0.1}Gambar}{8}{subsubsection.2.1.0.1}%
+\contentsline {subsubsection}{\numberline {II.1.0.2}Tabel}{8}{subsubsection.2.1.0.2}%
+\contentsline {subsubsection}{\numberline {II.1.0.3}Rumus}{9}{subsubsection.2.1.0.3}%
+\contentsline {subsection}{\numberline {II.1.1}Algoritma, Pseudocode, atau Kode}{9}{subsection.2.1.1}%
+\contentsline {section}{\numberline {II.2}Beberapa Kesalahan Penulisan yang Sering Terjadi}{10}{section.2.2}%
+\contentsline {subsection}{\numberline {II.2.1}Penggunaan kata "di mana" atau "dimana"}{10}{subsection.2.2.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.2.2}Penggunaan kata "sedangkan" dan "sehingga"}{10}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {II.2.3}Penggunaan Istilah yang Tidak Baku}{11}{subsection.2.2.3}%
+\contentsline {chapter}{\numberline {III}ANALISIS MASALAH}{12}{chapter.3}%
+\contentsline {section}{\numberline {III.1}Analisis Kondisi Saat Ini}{12}{section.3.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {III.2}Analisis Kebutuhan}{12}{section.3.2}%
+\contentsline {subsection}{\numberline {III.2.1}Identifikasi Masalah Pengguna}{12}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {III.2.2}Kebutuhan Fungsional}{13}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {III.2.3}Kebutuhan Nonfungsional}{13}{subsection.3.2.3}%
+\contentsline {section}{\numberline {III.3}Analisis Pemilihan Solusi}{13}{section.3.3}%
+\contentsline {subsection}{\numberline {III.3.1}Alternatif Solusi}{13}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {III.3.2}Analisis Penentuan Solusi}{13}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {IV}DESAIN KONSEP SOLUSI}{15}{chapter.4}%
+\contentsline {chapter}{\numberline {V}RENCANA SELANJUTNYA}{16}{chapter.5}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {chapter}{LAMPIRAN A: SOURCE CODE}{19}{appendix*.8}%
+\contentsline {chapter}{LAMPIRAN B: HASIL SURVEI}{20}{appendix*.9}%

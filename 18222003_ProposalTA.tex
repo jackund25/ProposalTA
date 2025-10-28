@@ -177,19 +177,19 @@
     
     \vspace*{3cm}
     
-    {\Large\bfseries PERANCANGAN SISTEM INFORMASI AKADEMIK BERBASIS WEB}\\
-     \vspace{4cm}
+    {\Large\bfseries PERANCANGAN SISTEM DIGITAL TWIN SEDERHANA UNTUK PREDIKSI KADAR GLUKOSA DARAH BERDASARKAN DATA SIMULATIF PASIEN DIABETES}\\
+     \vspace{3cm}
 
     {\Large \textbf{Proposal Tugas Akhir}}\\
 
 
-    \vspace{2cm}
+    \vspace{1cm}
     
     
     {\large Oleh}\\[0.3cm]
     \textbf{
-    {\large John Doe}\\
-    {\large 18299000}
+    {\large Daffari Adiyatma}\\
+    {\large 18222003}
     }\\
 
     \vspace{2cm}
@@ -223,7 +223,7 @@
   \textbf{\large LEMBAR PENGESAHAN}\\[1cm]
   \vspace*{1.5cm}
     
-  {\large\bfseries PERANCANGAN SISTEM INFORMASI AKADEMIK BERBASIS WEB}\\
+  {\large\bfseries PERANCANGAN SISTEM DIGITAL TWIN SEDERHANA UNTUK PREDIKSI KADAR GLUKOSA DARAH BERDASARKAN DATA SIMULATIF PASIEN DIABETES}\\
      \vspace{2cm}
 
   {\Large \textbf{Proposal Tugas Akhir}}\\
@@ -234,8 +234,8 @@
     
   {\large Oleh}\\[0.3cm]
     \textbf{
-    {\large John Doe}\\
-    {\large 18299000}
+    {\large Daffari Adiyatma}\\
+    {\large 18222003}
   }\\
     
   \vspace{0.5cm}
@@ -253,8 +253,8 @@
 % Versi 1 pembimbing (default)
 % ==========================================
 	Pembimbing  \\[3cm]
-	Dr. Ir. John Doe, M.T.   \\[0.2cm]
-	NIP. 123456789 
+	Prof. Dr. Ir. Suhono Harso Supangkat, M. Eng.   \\[0.2cm]
+	NIP. 196212031988111001 
 % ==========================================
 
 \end{center}
@@ -356,38 +356,139 @@
 
 % --- Latar Belakang ---
 \section{Latar Belakang}
-Latar Belakang menjelaskan dasar pemikiran, motivasi, kebutuhan, alasan, atau urgensi pemilihan masalah tugas akhir. Subbab ini berisi penjelasan ringkas tentang kondisi atau situasi yang ada saat ini terkait dengan topik yang dibahas. Tujuan utamanya adalah untuk memberikan informasi secukupnya kepada pembaca agar memahami topik yang akan dibahas. Dalam subbab ini, jelaskan hal-hal berikut ini:
-\begin{enumerate}
-\item	Kondisi atau situasi topik yang dibahas beserta permasalahannya, misalnya tentang pengelolaan informasi di puskesmas daerah pedesaan dan masalah yang dihadapi.
-\item	Berbagai solusi yang telah diterapkan atau solusi yang tersedia dan memungkinkan untuk diterapkan untuk menyelesaikan masalah tersebut.
-\end{enumerate}
+
+Penyakit diabetes melitus (DM) merupakan salah satu masalah kesehatan global yang paling serius pada abad ke-21. Menurut laporan International Diabetes Federation (IDF) tahun 2024, jumlah penderita diabetes di Indonesia mencapai lebih dari 19 juta orang dan diperkirakan terus meningkat seiring dengan perubahan gaya hidup dan urbanisasi cepat di kawasan Asia Tenggara \autocite{IDF2024}. Diabetes tidak hanya berdampak pada kadar glukosa darah yang tinggi, tetapi juga berisiko menimbulkan komplikasi kronis seperti penyakit jantung, gagal ginjal, neuropati, dan kebutaan \autocite{WHO2023}.
+
+Sebagian besar sistem pengelolaan diabetes di Indonesia masih bersifat reaktif. Data dari \textcite{Riskesdas2018, KSI2020} menunjukkan bahwa sebagian besar kasus diabetes di Indonesia tidak terdiagnosis, dengan hanya sekitar 26\% penderita yang mengetahui status penyakitnya. Hal ini sejalan dengan tinjauan sistematis oleh \textcite{Alkaff2021} yang menyimpulkan bahwa sistem kesehatan di Indonesia masih berfokus pada pendekatan kuratif dibandingkan pencegahan. Penggunaan continuous glucose monitoring (CGM) dan insulin pump telah terbukti membantu pasien dalam memantau kadar glukosa secara real-time dan menyesuaikan dosis insulin secara lebih presisi \autocite{Battelino2019}. Selain itu, pendekatan berbasis machine learning mulai digunakan untuk memprediksi fluktuasi glukosa darah berdasarkan data historis pasien \textcite{Woldaregay2019}. Teknologi digital twin, yang merupakan replika virtual dari kondisi fisiologis pasien, mulai diterapkan dalam manajemen diabetes untuk mensimulasikan respons metabolik pasien terhadap berbagai skenario pengobatan \autocite{Bruynseels2018}.
+
+Penelitian terkini oleh \textcite{Rad2024} mengusulkan framework digital twin komprehensif berbasis Personal Health Knowledge Graph (PHKG) yang mampu mengintegrasikan data dari Electronic Health Records (EHR), wearable devices, dan mobile health applications dengan standar HL7 FHIR. Framework ini telah terbukti efektif dalam prediksi glukosa dengan Root Mean Square Error (RMSE) 19,83 mg/dL dan mampu memberikan rekomendasi insulin personal serta saran diet yang disesuaikan. Penelitian serupa oleh \textcite{Zhang2024} mengintegrasikan machine learning dengan data multiomic untuk memprediksi progresi diabetes tipe 2, menunjukkan potensi digital twin dalam personalized medicine. \textcite{Cappon2024} dalam systematic review mereka menemukan bahwa meskipun pendekatan digital twin menjanjikan, sebagian besar implementasinya masih mengandalkan infrastruktur teknologi yang kompleks dan perangkat medis yang mahal.
+
+Meskipun framework-framework tersebut menunjukkan hasil yang menjanjikan, implementasinya menghadapi hambatan signifikan di konteks Indonesia. Pertama, dari sisi infrastruktur digital kesehatan, meskipun pemerintah Indonesia mewajibkan adopsi rekam medis elektronik (EMR) pada akhir 2023, transisi ini masih menghadapi berbagai tantangan teknologi, budaya, dan infrastruktur \textcite{Harahap2024}. Studi yang melibatkan 9 provinsi di Indonesia menunjukkan variasi signifikan dalam kesiapan teknologi informasi dan komunikasi (TIK) antarfasilitas kesehatan, dengan perlunya peningkatan sumber daya manusia (SDM), infrastruktur, perangkat keras, dan optimalisasi sistem informasi untuk mencapai kematangan TIK \autocite{Aisyah2024}. Sebagian besar fasilitas kesehatan belum menyediakan akses terintegrasi ke rekam kesehatan pasien dengan pertukaran informasi yang masih bersifat satu arah, dari fasilitas kesehatan ke pasien \autocite{Harahap2023}.
+
+Kedua, dari sisi keterjangkauan perangkat monitoring, framework \textcite{Rad2024} mengasumsikan ketersediaan Continuous Glucose Monitoring (CGM) untuk data real-time. Namun, studi \textcite{Ramadaniati2024} menunjukkan bahwa CGM memerlukan biaya setara satu bulan gaji untuk membeli reader dan dua bulan gaji untuk pasokan sensor bulanan, dengan upah minimum harian di Indonesia sekitar US\$3,50. Hal ini menyebabkan CGM tidak terjangkau bagi mayoritas pasien diabetes di Indonesia, terutama mengingat bahwa untuk membeli pasokan pengobatan selama 30 hari (insulin pen, jarum pen, dan monitoring mandiri berdasarkan 5 kali tes per hari), pasien perlu menghabiskan hampir seluruh gaji bulanan mereka.
+
+Ketiga, kompleksitas teknis framework \textcite{Rad2024} yang memerlukan pengembangan ontology berbasis HL7 FHIR, implementasi GLAV (Global-Local as View) framework untuk integrasi data, dan penggunaan Conditional Random Fields untuk mapping data, membutuhkan expertise spesialis yang belum banyak tersedia di Indonesia. Penelitian menunjukkan bahwa di negara berkembang, adopsi EMR berbeda karena beberapa faktor termasuk infrastruktur sistem kesehatan, tingkat pendidikan dan pelatihan tenaga kesehatan, pendanaan, dan penerimaan budaya terhadap EMR, sehingga di banyak negara berkembang, penggunaan EMR belum sepenuhnya diterapkan \autocite{Abodunrin2020}.
+
+Kondisi ini menciptakan kesenjangan antara potensi teknologi digital twin dengan kemampuan implementasi praktis di lapangan, khususnya di negara berkembang seperti Indonesia. Diperlukan pendekatan alternatif yang dapat memanfaatkan kemampuan prediktif dan simulatif digital twin tanpa ketergantungan pada infrastruktur yang kompleks dan perangkat keras yang mahal. Penggunaan data simulatif dari dataset terbuka seperti OhioT1DM Dataset dan UVA/Padova T1D Simulator dapat menjadi alternatif untuk mengembangkan dan menguji sistem prediktif diabetes sebagai proof-of-concept sebelum implementasi klinis yang lebih luas.
 
 % --- Rumusan Masalah ---
 \section{Rumusan Masalah}
-Rumusan Masalah berisi masalah utama yang dibahas dalam tugas akhir. Rumusan masalah yang baik memiliki struktur sebagai berikut:
+
+Berdasarkan latar belakang tersebut, permasalahan utama dalam tugas akhir ini adalah kesenjangan antara framework digital twin yang canggih (seperti yang dikembangkan oleh \textcite{Rad2024}) dengan kemampuan implementasi di Indonesia yang terkendala oleh keterbatasan infrastruktur EHR, tingginya biaya perangkat monitoring real-time, dan kompleksitas teknis yang memerlukan expertise spesialis. Kesenjangan ini penting untuk diatasi karena mayoritas penderita diabetes di Indonesia (74\%) belum terdiagnosis dan memerlukan sistem prediktif yang terjangkau untuk deteksi dini dan manajemen yang lebih baik.
+
+Untuk mengatasi permasalahan tersebut, penelitian ini mengusulkan pengembangan framework digital twin yang disederhanakan berbasis data simulatif, yang tidak memerlukan infrastruktur kompleks namun tetap mampu memberikan prediksi yang akurat. Secara spesifik, rumusan masalah dalam tugas akhir ini adalah sebagai berikut:
+
 \begin{enumerate}
-\item	Pokok persoalan dari kondisi atau situasi yang ada saat ini. Dengan kata lain, jelaskan kelemahan atau kekurangan dari kondisi, situasi, atau solusi yang dijelaskan pada latar belakang. Ini merupakan pokok rumusan masalah.
-\item	Elaborasi lebih lanjut urgensi penyelesaian masalah tersebut (mengapa penting untuk diselesaikan dan akibat yang dapat terjadi jika tidak diselesaikan).
-\item	Usulan singkat terkait dengan solusi yang ditawarkan untuk menyelesaikan persoalan.
-Penting untuk diperhatikan bahwa persoalan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan di bab Evaluasi (apakah terselesaikan atau tidak).
+    \item Bagaimana merancang arsitektur sistem digital twin yang disederhanakan untuk prediksi kadar glukosa darah tanpa ketergantungan pada Personal Health Knowledge Graph dan infrastruktur HL7 FHIR?
+    
+    \item Bagaimana mengimplementasikan model prediktif glukosa darah menggunakan pendekatan machine learning langsung berbasis data simulatif dari dataset publik?
+    
+    \item Bagaimana metode validasi yang tepat untuk memastikan hasil prediksi sistem digital twin yang disederhanakan memiliki akurasi yang sebanding dengan pendekatan state-of-the-art?
+    
+    \item Bagaimana sistem digital twin yang disederhanakan ini dapat digunakan sebagai alat bantu prediksi yang feasible untuk implementasi di fasilitas kesehatan dengan keterbatasan infrastruktur?
 \end{enumerate}
 
 % --- Tujuan ---
 \section{Tujuan}
-Tuliskan tujuan utama dan/atau tujuan detail yang akan dicapai dalam pelaksanaan tugas akhir. Fokuskan pada hasil akhir yang ingin diperoleh setelah tugas akhir diselesaikan, terkait dengan penyelesaian persoalan pada rumusan masalah. Penting untuk diperhatikan bahwa tujuan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan di akhir pelaksanaan tugas akhir apakah tercapai atau tidak. Tuliskan kriteria keberhasilan tugas akhir ini.
+
+Tujuan umum dari penelitian ini adalah mengembangkan framework digital twin yang disederhanakan berbasis data simulatif untuk prediksi kadar glukosa darah pada pasien diabetes, yang feasible diimplementasikan di Indonesia tanpa memerlukan infrastruktur kompleks dan perangkat monitoring real-time yang mahal.
+
+Secara khusus, tujuan yang ingin dicapai meliputi:
+
+\begin{enumerate}
+    \item Merancang arsitektur sistem digital twin yang disederhanakan dengan pendekatan machine learning langsung, tanpa memerlukan pengembangan knowledge graph dan integrasi HL7 FHIR.
+    
+    \item Mengembangkan modul prediktif kadar glukosa berbasis machine learning (LSTM atau Random Forest) yang dapat bekerja dengan data minimal dari dataset simulatif publik.
+    
+    \item Melakukan validasi terhadap hasil prediksi sistem menggunakan dataset terbuka (OhioT1DM Dataset atau UVA/Padova Simulator) dengan metrik evaluasi standar seperti RMSE, MAE, dan Clarke Error Grid Analysis.
+    
+    \item Mengevaluasi akurasi dan reliabilitas sistem dalam memprediksi perubahan kadar glukosa darah dan membandingkannya dengan baseline pendekatan yang ada.
+\end{enumerate}
+
+Kriteria keberhasilan tugas akhir ini adalah terciptanya prototipe sistem yang mampu menghasilkan prediksi kadar glukosa dengan akurasi yang sebanding dengan state-of-the-art (target RMSE $\leq$ 25 mg/dL) namun dengan kompleksitas implementasi yang jauh lebih rendah, sehingga dapat menjadi proof-of-concept untuk implementasi di fasilitas kesehatan dengan infrastruktur terbatas.
 
 % --- Batasan Masalah ---
 \section{Batasan Masalah}
-Tuliskan batasan-batasan yang diambil dalam pelaksanaan tugas akhir. Batasan ini dapat dihindari (bersifat opsional, tidak perlu ada) jika topik atau judul tugas akhir dibuat cukup spesifik.
+
+Penelitian ini dibatasi oleh hal-hal berikut:
+
+\begin{enumerate}
+    \item Data yang digunakan berasal dari dataset terbuka (OhioT1DM Dataset atau UVA/Padova Simulator) tanpa pengumpulan data pasien nyata.
+    
+    \item Sistem tidak melibatkan perangkat keras, sensor IoT, atau integrasi dengan sistem EHR yang ada.
+    
+    \item Fokus penelitian adalah pada pengembangan dan pengujian sistem digital twin berbasis perangkat lunak dengan pendekatan machine learning langsung, tanpa implementasi Personal Health Knowledge Graph.
+    
+    \item Model hanya mencakup prediksi kadar glukosa berdasarkan variabel pendukung yang tersedia dalam dataset (asupan karbohidrat, dosis insulin, aktivitas fisik), tanpa melibatkan faktor genetik, psikologis, atau data multiomic.
+    
+    \item Evaluasi dilakukan terhadap performa sistem dalam skenario simulatif sebagai proof-of-concept, bukan pada uji klinis langsung dengan pasien nyata.
+    
+    \item Sistem yang dikembangkan berfokus pada satu use case utama yaitu prediksi glukosa darah, tidak mencakup optimasi insulin atau rekomendasi meal planning.
+\end{enumerate}
 
 % --- Metodologi Pengerjaan TA ---
 \section{Metodologi}
-Tuliskan semua tahapan yang akan dilalui selama pelaksanaan tugas akhir. Tahapan ini spesifik untuk menyelesaikan persoalan tugas akhir. Khusus untuk penyusunan proposal ini, jelaskan secara detail:
+
+Metodologi penelitian ini terdiri dari lima tahap utama:
+
+\subsection{Studi Literatur}
+
+Melakukan kajian pustaka terhadap konsep Digital Twin, pengelolaan penyakit diabetes, serta penelitian terdahulu terkait model simulatif dan prediktif. Sumber literatur berasal dari jurnal ilmiah bereputasi seperti IEEE Xplore, ScienceDirect, Nature Digital Medicine, dan Journal of Personalized Medicine. Pencarian literatur dilakukan dengan kata kunci ``digital twin diabetes'', ``glucose prediction machine learning'', ``diabetes simulation model'', ``simplified digital twin framework'', dan kombinasi kata kunci terkait.
+
+Literatur yang dikumpulkan kemudian dikelompokkan berdasarkan tema: (a) konsep dan arsitektur digital twin dalam kesehatan, dengan fokus pada framework state-of-the-art seperti Rad et al. \autocite{Rad2024} dan Zhang et al. \autocite{Zhang2024}; (b) metode prediksi glukosa darah menggunakan machine learning dan deep learning; (c) dataset simulatif diabetes yang tersedia secara publik; (d) metrik evaluasi sistem prediktif kesehatan; dan (e) tantangan implementasi teknologi kesehatan digital di negara berkembang.
+
+\subsection{Analisis Kebutuhan dan Perancangan Sistem}
+
+Menentukan kebutuhan fungsional sistem digital twin yang disederhanakan, dengan fokus pada:
+
+\begin{itemize}
+    \item \textbf{Pengelolaan data simulatif}: Kemampuan untuk membaca, memproses, dan menyimpan data dari dataset publik dalam format yang konsisten.
+    \item \textbf{Modul preprocessing}: Pembersihan data, normalisasi, dan feature engineering untuk persiapan training model.
+    \item \textbf{Modul prediksi}: Implementasi model machine learning untuk prediksi glukosa darah.
+    \item \textbf{Modul evaluasi}: Perhitungan metrik akurasi dan visualisasi hasil prediksi.
+\end{itemize}
+
+Mendesain arsitektur sistem yang terdiri dari tiga komponen utama yang disederhanakan:
+
 \begin{enumerate}
-\item	Tahapan investigasi pengumpulan fakta di latar belakang untuk merumuskan masalah.
-\item	Langkah-langkah pencarian, pengelompokan, dan penapisan literatur atau sumber informasi untuk mengumpulkan informasi yang relevan tentang topik yang diangkat, termasuk teori (konsep atau teori apa saja yang perlu dicari), hal-hal yang telah dicapai oleh orang lain (cara mencari dan kata kuncinya), dan berbagai informasi pendukung, untuk mencari solusi terhadap masalah yang dibahas. Gunakan metodologi yang tepat dalam menggali informasi dan dokumentasikan prosesnya (termasuk rekaman wawancara atau survei) di dalam Lampiran, termasuk tautan ke video atau foto. Hasil penggalian informasi ini akan dijelaskan secara sistematis di Bab II Studi Literatur.
+    \item \textbf{Data Management Module}: Modul untuk loading dan preprocessing data dari dataset publik (OhioT1DM atau UVA/Padova), tanpa perlu integrasi dengan sistem EHR atau sensor real-time.
+    
+    \item \textbf{Simplified Patient Digital Model}: Representasi pasien berbasis feature vector yang berisi variabel-variabel penting (glucose history, carbohydrate intake, insulin dosage, physical activity) tanpa menggunakan knowledge graph.
+    
+    \item \textbf{Prediction Engine}: Model machine learning (LSTM atau Random Forest) yang dilatih untuk memprediksi kadar glukosa darah berdasarkan data historis, dengan fokus pada efisiensi komputasi dan kemudahan deployment.
 \end{enumerate}
 
+\subsection{Implementasi Sistem}
+
+Mengembangkan sistem berbasis Python dengan menggunakan framework dan library berikut:
+
+\begin{itemize}
+    \item \textbf{Data processing}: Pandas, NumPy untuk manipulasi data
+    \item \textbf{Machine learning}: Scikit-learn untuk model tradisional (Random Forest, SVM)
+    \item \textbf{Deep learning}: TensorFlow atau PyTorch untuk model LSTM/GRU
+    \item \textbf{Visualisasi}: Matplotlib, Seaborn untuk visualisasi hasil prediksi
+    \item \textbf{Evaluasi}: Implementasi metrik RMSE, MAE, dan Clarke Error Grid Analysis
+\end{itemize}
+
+Membangun model digital twin dengan pendekatan data-driven menggunakan dataset simulatif, dengan tahapan:
+
+\begin{enumerate}
+    \item Eksplorasi dan analisis dataset untuk memahami distribusi dan karakteristik data
+    \item Feature engineering untuk mengekstrak fitur-fitur yang relevan
+    \item Splitting data menjadi training, validation, dan testing set
+    \item Training model dengan hyperparameter tuning
+    \item Evaluasi performa model pada test set
+\end{enumerate}
+
+\subsection{Validasi dan Evaluasi}
+
+Melakukan pengujian model dengan metrik evaluasi berikut:
+
+\begin{itemize}
+    \item \textbf{Root Mean Square Error (RMSE)}: Mengukur rata-rata deviasi prediksi dari nilai aktual
+    \item \textbf{Mean Absolute Error (MAE)}: Mengukur rata-rata absolut error
+    \item \textbf{Clarke Error Grid Analysis (EG)}: Mengukur clinical accuracy dengan mengkategorikan error berdasarkan risk
+\end{itemize}
 % ==========================================
 % BAB II STUDI LITERATUR
 % ==========================================
