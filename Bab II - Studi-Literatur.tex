@@ -51,6 +51,8 @@ Contoh tabel dapat dilihat pada Tabel \ref{tbl:harga1} dan \ref{tbl:harga2}. Tab
 \label{tbl:harga1}
 \end{table}
 
+
+
 \begin{table}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
 	\begin{tabular}{ | l | c | r | }
 	\hline
@@ -64,6 +66,15 @@ Contoh tabel dapat dilihat pada Tabel \ref{tbl:harga1} dan \ref{tbl:harga2}. Tab
 \caption{Tabel harga bahan sekunder}
 \label{tbl:harga2}
 \end{table}
+
+% -- Example of importing table from external file --
+\subsubsection{Mengimpor Tabel dari Berkas Eksternal}
+
+Tabel \ref{tbl:harga3} diimpor dari berkas eksternal \textit{table/tabel1.tex} menggunakan perintah \textit{input}. 
+Dengan demikian, jika tabel tersebut perlu diubah, cukup mengubah pada berkas eksternal tersebut tanpa perlu mengubah pada berkas utama ini.
+
+\input table/tabel1.tex
+
 
 % -- Example of long table --
 \subsubsection{Tabel yang Sangat Panjang}
@@ -86,7 +97,7 @@ seperti pada Tabel \ref{tbl:longtable1}.
 
 \midrule
 \multicolumn{4}{r}{\textit{Bersambung ke halaman berikutnya}} \\
-\bottomrule
+%\bottomrule
 \endfoot
 
 \bottomrule
@@ -147,7 +158,7 @@ seperti pada Tabel \ref{tbl:longtable1}.
 % (You can easily extend this list to hundreds of rows)
 \end{longtable}
 
-\subsubsection{Rumus}
+\subsubsection{Beberapa Contoh Penulisan Rumus atau Persamaan Matematika Menggunakan LaTeX Termasuk Penomorannya}
 Contoh rumus matematika dapat ditulis seperti pada Persamaan \ref{eq:contoh1} di bawah ini. 
 Penomoran persamaan diletakkan di sebelah kanan, dan rumus ditulis dalam mode \textit{display math}.
 \begin{equation}
