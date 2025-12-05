@@ -1,5 +1,16 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is '18222003_ProposalTA.blg'
-[116] biber-MSWIN64:340> INFO - === 
-[153] Utils.pm:410> ERROR - 18222003_ProposalTA.bcf is malformed, last biblatex run probably failed. Deleted 18222003_ProposalTA.bbl
-[153] Biber.pm:136> INFO - ERRORS: 1
+[1] Config.pm:310> INFO - Logfile is '18222003_ProposalTA.blg'
+[218] biber-MSWIN64:340> INFO - === 
+[287] Biber.pm:419> INFO - Reading '18222003_ProposalTA.bcf'
+[750] Biber.pm:979> INFO - Found 21 citekeys in bib section 0
+[781] Biber.pm:4419> INFO - Processing section 0
+[806] Biber.pm:4610> INFO - Looking for bibtex file 'daftar-pustaka.bib' for section 0
+[875] bibtex.pm:1713> INFO - LaTeX decoding ...
+[928] bibtex.pm:1519> INFO - Found BibTeX data source 'daftar-pustaka.bib'
+[1388] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1388] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1388] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'level = 4' with 'level = 2'
+[1388] Biber.pm:4239> INFO - Sorting list 'cms/global//global/global' of type 'entry' with template 'cms' and locale 'indonesian'
+[1389] Biber.pm:4245> INFO - No sort tailoring available for locale 'indonesian'
+[1459] bbl.pm:660> INFO - Writing '18222003_ProposalTA.bbl' with encoding 'UTF-8'
+[1506] bbl.pm:763> INFO - Output to 18222003_ProposalTA.bbl

@@ -1,9 +1,115 @@
-% ==========================================
-% BAB IV DESAIN KONSEP SOLUSI
-% ==========================================
-\chapter{DESAIN KONSEP SOLUSI}
+\chapter{Desain Konsep Solusi}
 \label{chap:desain-konsep-solusi}
-Ilustrasikan desain konsep solusi dalam bentuk model konseptual dan penjelasan secara ringkas, 
-beserta perbedaannya dengan sistem saat ini. Ilustrasi harus dapat dibandingkan (\textit{before} and \textit{after}). 
-Karena masih berupa proposal, bab ini hanya berisi gambar desain konsep solusi tersebut dan 
-penjelasan perbandingannya dengan gambar sistem yang ada saat ini (yang tergambar di awal Bab \ref{chap:analisis-masalah}).
+
+\section{Sistem Saat Ini (Before)}
+Model sistem saat ini telah ditampilkan pada Gambar~\ref{gambar:model-sistem-eksisting} pada Bab~\ref{chap:analisis-masalah}. Sistem tersebut menggambarkan alur pengelolaan diabetes yang masih bersifat reaktif: data diperoleh melalui pemeriksaan manual atau berkala, kemudian tenaga medis mengevaluasi kondisi pasien berdasarkan informasi yang terbatas. Beberapa keterbatasan sistem saat ini antara lain:
+\begin{itemize}
+    \item aliran data satu arah dan tidak \textit{real-time};
+    \item pemantauan berbasis \textit{fingerstick} yang bersifat episodik;
+    \item tidak adanya mekanisme prediksi kadar glukosa;
+    \item tidak adanya representasi digital pasien atau \textit{digital twin};
+    \item tidak adanya penjelasan berbasis pengetahuan atau analitik cerdas.
+\end{itemize}
+
+Keterbatasan tersebut memberikan dasar perlunya perancangan solusi yang lebih adaptif, prediktif, dan mampu menyediakan konteks klinis yang dapat diinterpretasikan.
+
+\section{Model Konseptual Solusi (After)}
+Solusi yang diusulkan terdiri dari enam komponen utama yang bekerja secara terpadu: \textit{Data Source Layer}, \textit{Preprocessing Layer}, \textit{Predictive Modeling Layer}, \textit{Digital Twin Layer}, \textit{RAG Knowledge Layer}, dan \textit{Output \& Visualization Layer}. Aliran data dalam sistem usulan bersifat dua arah, di mana model prediktif memperbarui \textit{digital twin}, dan \textit{digital twin} menyediakan konteks fisiologis bagi penjelasan berbasis RAG.
+
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[width=0.9\textwidth]{image/Model_Konseptual_Sistem.jpg}
+    \caption{Model konseptual sistem usulan berbasis \textit{Digital Twin} dan \textit{Retrieval-Augmented Generation}.}
+    \label{gambar:model-konseptual-after}
+\end{figure}
+
+Gambar~\ref{gambar:model-konseptual-after} memperlihatkan arsitektur sistem yang terdiri dari beberapa lapisan utama:
+
+\begin{enumerate}
+    \item \textbf{Data Source Layer}: Lapisan paling bawah yang menyediakan data simulatif dari dataset publik seperti OhioT1DM atau UVA/Padova Simulator. Data mencakup riwayat glukosa darah, asupan karbohidrat, dosis insulin, dan aktivitas fisik.
+    
+    \item \textbf{Preprocessing Layer}: Modul yang bertanggung jawab untuk pembersihan data, normalisasi, imputasi nilai yang hilang, dan ekstraksi fitur temporal. Proses ini mempersiapkan data agar siap digunakan oleh model prediktif.
+    
+    \item \textbf{Predictive Modeling Layer}: Inti dari sistem prediksi yang menggunakan algoritma \textit{machine learning} (seperti LSTM atau \textit{Random Forest}) untuk memprediksi kadar glukosa darah jangka pendek berdasarkan pola historis.
+    
+    \item \textbf{Digital Twin Layer}: Representasi virtual pasien yang diperbarui secara dinamis berdasarkan hasil prediksi. \textit{Digital twin} ini dapat digunakan untuk simulasi skenario intervensi seperti perubahan dosis insulin atau pola makan.
+    
+    \item \textbf{RAG Knowledge Layer}: Modul yang mengintegrasikan \textit{Retrieval-Augmented Generation} untuk memberikan penjelasan klinis berbasis literatur medis dan panduan klinis. Modul ini mengakses basis pengetahuan eksternal untuk memberikan konteks pada hasil prediksi.
+    
+    \item \textbf{Output \& Visualization Layer}: Lapisan antarmuka yang menyajikan hasil prediksi, visualisasi tren glukosa, hasil simulasi, dan penjelasan klinis kepada pengguna (pasien atau tenaga medis).
+\end{enumerate}
+
+Secara keseluruhan, sistem memungkinkan prediksi kadar glukosa jangka pendek, pembaruan status fisiologis virtual, simulasi skenario intervensi, dan penyediaan penjelasan berbasis bukti. Hal ini menjadikan sistem lebih adaptif dan informatif dibandingkan dengan pendekatan konvensional yang bersifat reaktif.
+
+\section{Perbandingan Sistem Before dan After}
+Tabel~\ref{table:before-after} merangkum perbedaan utama antara sistem saat ini (\textit{before}) dan sistem usulan (\textit{after}).
+
+\input{table/tabelIV1.tex}
+
+Perbedaan mendasar terletak pada paradigma sistem: dari reaktif menjadi prediktif-adaptif. Sistem usulan tidak hanya mencatat dan menampilkan data historis, tetapi juga mampu memprediksi kondisi masa depan dan memberikan penjelasan kontekstual berbasis pengetahuan medis.
+
+\section{Diagram Use Case}
+Diagram \textit{use case} digunakan untuk menggambarkan keterlibatan aktor dan fungsi utama sistem. Sistem usulan memiliki dua aktor utama: \textbf{Pasien} dan \textbf{Dokter/Tenaga Medis}, dengan enam \textit{use case} inti yang mencakup seluruh fungsionalitas sistem.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.85\textwidth]{image/UseCase_Diagram.jpg}
+    \caption{Diagram \textit{use case} sistem usulan.}
+    \label{gambar:use-case}
+\end{figure}
+
+Gambar~\ref{gambar:use-case} memperlihatkan interaksi antara aktor dengan sistem. Deskripsi masing-masing \textit{use case} adalah sebagai berikut:
+
+\subsection{Use Case Aktor Pasien}
+\begin{enumerate}
+    \item \textbf{UC1 - Provide Patient Information}: Pasien memasukkan data fisiologis seperti riwayat glukosa darah, asupan karbohidrat, dosis insulin, dan aktivitas fisik ke dalam sistem. \textit{Use case} ini memenuhi kebutuhan FR-01 (pengelolaan dataset simulatif) dengan memungkinkan input data yang akan diproses oleh sistem.
+    
+    \item \textbf{UC2 - Generate Personal Prediction}: Sistem menghasilkan prediksi kadar glukosa darah jangka pendek berdasarkan data yang dimasukkan dan pola historis pasien. \textit{Use case} ini memenuhi FR-02 (prediksi kadar glukosa menggunakan algoritma \textit{machine learning}) dan NFR-02 (akurasi prediksi dengan target RMSE $\leq$ 25 mg/dL).
+    
+    \item \textbf{UC3 - Simulate Personal Scenario}: Pasien dapat melakukan simulasi "\textit{what-if}" untuk melihat dampak perubahan pola makan, dosis insulin, atau aktivitas fisik terhadap kadar glukosa prediksi. \textit{Use case} ini memenuhi FR-05 (simulasi perubahan kadar glukosa sebagai representasi \textit{digital twin}).
+\end{enumerate}
+
+\subsection{Use Case Aktor Dokter/Tenaga Medis}
+\begin{enumerate}
+    \item \textbf{UC4 - Review Patient Data}: Tenaga medis dapat mengakses dan meninjau data historis serta status \textit{digital twin} pasien untuk evaluasi kondisi. \textit{Use case} ini mendukung FR-04 (visualisasi grafik perubahan kadar glukosa) dan memfasilitasi pengambilan keputusan klinis.
+    
+    \item \textbf{UC5 - Generate Clinical Prediction + Explanation (RAG)}: Sistem menghasilkan prediksi klinis disertai penjelasan berbasis literatur medis menggunakan mekanisme RAG. \textit{Use case} ini memenuhi FR-06 (modul RAG untuk mencari informasi medis relevan) dan memberikan konteks interpretatif yang mendukung NFR-05 (antarmuka intuitif dengan penjelasan yang mudah dipahami).
+    
+    \item \textbf{UC6 - Simulate Clinical Scenario}: Tenaga medis dapat melakukan simulasi skenario terapi untuk merencanakan intervensi yang optimal bagi pasien. \textit{Use case} ini melengkapi FR-05 dengan memberikan perspektif klinis pada simulasi \textit{digital twin}.
+\end{enumerate}
+
+\section{Communication Diagram}
+\textit{Communication diagram} menggambarkan interaksi dinamis antara komponen-komponen sistem dalam bentuk pesan yang saling bertukar. Diagram ini menunjukkan alur eksekusi dari perspektif kolaborasi objek dan melengkapi pemahaman yang diberikan oleh diagram \textit{use case}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{image/Communication_Diagram.jpg}
+    \caption{\textit{Communication diagram} sistem prediksi glukosa berbasis \textit{Digital Twin}.}
+    \label{gambar:communication-diagram}
+\end{figure}
+
+Gambar~\ref{gambar:communication-diagram} memperlihatkan 16 pesan yang saling bertukar antara komponen sistem. Alur utama dapat dijelaskan sebagai berikut:
+
+\begin{enumerate}
+    \item \textbf{Data Input Flow (Message 1-2)}: Pasien memasukkan data fisiologis ke "DataManager", yang kemudian melakukan preprocessing data. Alur ini mengimplementasikan FR-01 dengan memastikan data terbaca dan tervalidasi dengan baik.
+    
+    \item \textbf{Prediction Flow (Message 3-6)}: Data yang telah diproses dikirim ke "PredictionEngine", yang memanggil "MLModel" untuk menghasilkan prediksi. Hasil prediksi kemudian digunakan untuk memperbarui "DigitalTwinEngine". Alur ini mengimplementasikan FR-02 dan mendukung pencapaian NFR-02 (akurasi prediksi).
+    
+    \item \textbf{State Management (Message 7)}: "DigitalTwinEngine" menyimpan status terkini dari representasi virtual pasien, memastikan konsistensi data untuk simulasi dan prediksi berikutnya.
+    
+    \item \textbf{Simulation Flow (Message 8-10)}: Pasien dapat meminta simulasi skenario melalui "ScenarioSimulationEngine", yang berkomunikasi dengan "DigitalTwinEngine" untuk menghasilkan hasil simulasi. Alur ini mengimplementasikan FR-05.
+    
+    \item \textbf{Explanation Flow (Message 11-13)}: Tenaga medis dapat meminta penjelasan klinis melalui "RAGModule", yang mengambil dokumen relevan dari "KnowledgeBase" dan menghasilkan penjelasan berbasis konteks. Alur ini mengimplementasikan FR-06 dan mendukung NFR-05 (antarmuka yang mudah dipahami).
+    
+    \item \textbf{Visualization Flow (Message 14-16)}: "VisualizationModule" mengintegrasikan hasil prediksi, simulasi, dan penjelasan untuk ditampilkan kepada pasien dan tenaga medis. Alur ini mengimplementasikan FR-04 dengan menyediakan visualisasi grafis yang informatif.
+\end{enumerate}
+
+Diagram ini menunjukkan bahwa sistem beroperasi secara modular, di mana setiap komponen memiliki tanggung jawab yang jelas namun tetap terintegrasi melalui pertukaran pesan yang terstruktur. Modularitas ini mendukung NFR-01 (efisiensi komputasi pada sumber daya terbatas) dan NFR-03 (penggunaan dataset simulatif tanpa biaya lisensi).
+
+\section{Pemetaan Use Case terhadap FR dan NFR}
+Bagian ini memberikan keterkaitan antara \textit{use case} yang telah dirancang dan \textit{functional requirements} (FR) serta \textit{non-functional requirements} (NFR) dari sistem. Pemetaan ini memastikan bahwa setiap kebutuhan sistem tercakup dalam desain \textit{use case}.
+
+\input{table/tabelIV2.tex}
+
+Tabel~\ref{tabel:pemetaan-uc-requirements} menunjukkan bahwa seluruh kebutuhan fungsional dan nonfungsional telah dipetakan ke dalam \textit{use case} yang dirancang.

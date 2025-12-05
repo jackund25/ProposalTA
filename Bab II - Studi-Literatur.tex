@@ -152,34 +152,6 @@ Dalam konteks kesehatan digital, framework RAG berpotensi diintegrasikan dengan 
 
 Berbagai penelitian telah dilakukan untuk mengembangkan model \textit{Digital Twin} dan sistem prediktif berbasis \textit{machine learning} dalam bidang kesehatan, khususnya manajemen \textit{Diabetes Mellitus}. Beberapa studi juga mulai mengeksplorasi integrasi antara pembelajaran mesin, representasi pengetahuan, dan sistem generatif seperti \textit{Retrieval-Augmented Generation (RAG)}. Tinjauan ini bertujuan untuk mengidentifikasi kemajuan terkini sekaligus menemukan celah penelitian yang relevan untuk konteks Indonesia.
 
-\begin{longtable}[h]
-\caption{Ringkasan penelitian terkait \textit{Digital Twin} dan prediksi kadar glukosa darah.}
-\label{tbl:penelitian-terkait}
-\begin{tabular}{ | p{2.8cm} | p{3.8cm} | p{3.5cm} | p{4.5cm} | }
-\hline
-\textbf{Peneliti (Tahun)} & \textbf{Pendekatan / Model} & \textbf{Konteks / Dataset} & \textbf{Hasil Utama / Temuan} \\
-\hline
-\textcite{Bruynseels2018} & Konseptualisasi \textit{Digital Twin} dalam etika kesehatan & Literatur konseptual & Menyoroti aspek etika dan tanggung jawab sosial dalam penerapan DT di kesehatan. \\
-\hline
-\textcite{Cappon2024} & \textit{Digital Twin} untuk T1DM & Dataset CGM & Arsitektur tiga tahap (data collection, twin creation, twin use); potensi tinggi namun infrastruktur mahal. \\
-\hline
-\textcite{Rad2024} & \textit{Patient-Centric Digital Twin} berbasis PHKG & Data EHR dan \textit{wearable} (HL7 FHIR) & RMSE 19.83 mg/dL; memberikan rekomendasi insulin dan diet personal. \\
-\hline
-\textcite{Zhang2024} & Integrasi DT dengan data multi-omics & Dataset simulatif T2DM & Prediksi progresi T2DM akurat; masih bergantung pada infrastruktur besar. \\
-\hline
-\textcite{Woldaregay2019} & \textit{Machine Learning} untuk prediksi glukosa & Dataset CGM (real patient) & Model prediksi jangka pendek berbasis regresi non-linear; baseline data-driven. \\
-\hline
-\textcite{Ghimire2024} & \textit{LSTM + Attention} untuk prediksi glukosa & Beberapa dataset publik & Model dengan \textit{attention} menunjukkan generalisasi lintas dataset yang lebih baik. \\
-\hline
-\textcite{li2022time} & \textit{Deep Learning (LSTM)} untuk prediksi glukosa & Dataset CGM individual & LSTM outperform model klasik dengan RMSE rata-rata $\leq$ 22 mg/dL. \\
-\hline
-\textcite{Lewis2020} & \textit{Retrieval-Augmented Generation (RAG)} & Tugas NLP berbasis pengetahuan & Framework retriever–generator meningkatkan akurasi dan relevansi keluaran generatif. \\
-\hline
-\textcite{Borgeaud2022} & RAG skala besar dengan \textit{retrieval transformer} & Basis data 10 triliun token & Mengurangi \textit{hallucination} dan meningkatkan efisiensi penalaran berbasis pengetahuan. \\
-\hline
-\end{tabular}
-\end{longtable}
-
 Berdasarkan Tabel~\ref{tbl:penelitian-terkait}, penelitian \textcite{Rad2024}, \textcite{Zhang2024}, dan \textcite{Cappon2024} berfokus pada penerapan \textit{Digital Twin} untuk manajemen diabetes dengan data real-time dari perangkat medis. Meskipun hasilnya menjanjikan, pendekatan tersebut masih memiliki keterbatasan pada aspek biaya, kompleksitas teknologi, dan ketergantungan terhadap infrastruktur \textit{Electronic Health Records} (EHR) yang belum merata di negara berkembang seperti Indonesia.
 
 Sementara itu, penelitian \textcite{Woldaregay2019}, \textcite{li2022time}, dan \textcite{Ghimire2024} menunjukkan bahwa model \textit{machine learning} berbasis deret waktu mampu memprediksi kadar glukosa dengan akurasi tinggi, bahkan menggunakan data simulatif atau publik. Namun, model tersebut masih terbatas pada konteks prediksi numerik dan belum mengintegrasikan pengetahuan klinis eksplisit.
@@ -187,6 +159,8 @@ Sementara itu, penelitian \textcite{Woldaregay2019}, \textcite{li2022time}, dan 
 Penelitian \textcite{Lewis2020} dan \textcite{Borgeaud2022} memperkenalkan paradigma \textit{Retrieval-Augmented Generation (RAG)}, yang menggabungkan pencarian informasi eksternal dengan keluaran generatif. Pendekatan ini potensial jika diadaptasi untuk domain medis, di mana sistem tidak hanya memprediksi nilai glukosa tetapi juga menjelaskan dasar fisiologis hasil prediksi tersebut.
 
 Celah penelitian ini menjadi dasar pengembangan \textbf{\textit{RAG Digital Twin Framework for Blood Glucose Prediction}}, yang akan dibahas pada Bab~III.
+
+\input{table/tabelII1.tex} 
 
 \section{Tantangan Implementasi di Indonesia}
 

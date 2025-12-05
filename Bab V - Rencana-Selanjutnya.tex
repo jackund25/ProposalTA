@@ -1,11 +1,147 @@
 % ==========================================
 % BAB V RENCANA SELANJUTNYA
 % ==========================================
-\chapter{RENCANA SELANJUTNYA}
-\label{chap:rencana-selanjutnya}
-Jelaskan secara detail langkah-langkah rencana selanjutnya, hal-hal yang diperlukan atau akan disiapkan, dan risiko dan mitigasinya, yang meliputi:
+\chapter{Rencana Selanjutnya}
+
+\section{Rencana Implementasi}
+
+Rencana implementasi mencakup tahapan teknis yang diperlukan untuk membangun prototipe sistem prediksi glukosa berbasis Digital Twin dan Retrieval-Augmented Generation (RAG). Secara umum, tahapan implementasi meliputi:
+
+\subsection{Persiapan Lingkungan dan Perangkat Pengembangan}
+
+Lingkungan pengembangan menggunakan perangkat keras utama berupa \textbf{Asus Vivobook Pro 14 OLED} dengan spesifikasi:
+
+\begin{itemize}
+    \item Prosesor: AMD Ryzen 7 5800H / Intel Core i5/i7 (varian seri)
+    \item GPU: NVIDIA GeForce RTX 3050 / 3050Ti
+    \item RAM: 16 GB
+    \item Storage: 512 GB SSD NVMe
+    \item Sistem Operasi: Windows 11
+    \item Lingkungan kerja: VS Code, Python Virtual Environment
+\end{itemize}
+
+Perangkat tersebut memadai untuk kebutuhan pelatihan model machine learning skala menengah, eksperimen deep learning dasar, serta pemrosesan data.
+
+\subsection{Persiapan Data}
+
+Tahap ini mencakup:
+
+\begin{itemize}
+    \item Penentuan format data input dan struktur variabel.
+    \item Eksplorasi karakteristik data, identifikasi missing values, dan pemeriksaan distribusi.
+    \item Proses pembersihan data (cleaning) dan normalisasi.
+    \item Penyusunan sequence atau time-window untuk mendukung pemodelan deret waktu.
+\end{itemize}
+
+\subsection{Pengembangan Model Prediksi}
+
+Tahap pemodelan mencakup:
+
 \begin{enumerate}
-\item	Rencana implementasi, termasuk alat dan bahan yang diperlukan, lingkungan, konfigurasi, biaya, dan sebagainya.
-\item	Desain pengujian dan evaluasi, misalnya metode verifikasi dan validasi.
-\item	Analisis risiko dan mitigasi, misalnya tindakan selanjutnya jika ada yang tidak berjalan sesuai rencana.
+    \item Pembuatan model baseline (misal: Random Forest, Support Vector Regression, MLP).
+    \item Pengembangan model berbasis \textit{deep learning} seperti LSTM atau GRU.
+    \item Tuning hiperparameter untuk meningkatkan performa model.
+    \item Pemilihan model terbaik berdasarkan metrik evaluasi.
 \end{enumerate}
+
+\subsection{Pembangunan Digital Twin}
+
+Digital Twin digunakan sebagai representasi keadaan pasien secara virtual. Kegiatan yang dilakukan antara lain:
+
+\begin{itemize}
+    \item Perancangan state digital yang mencerminkan kondisi glukosa.
+    \item Implementasi mekanisme pembaruan state berdasarkan prediksi model.
+    \item Simulasi skenario perubahan variabel seperti insulin, karbohidrat, dan aktivitas.
+\end{itemize}
+
+\subsection{Integrasi Retrieval-Augmented Generation (RAG)}
+
+Tahapan ini meliputi:
+
+\begin{itemize}
+    \item Penyusunan basis pengetahuan eksternal.
+    \item Implementasi \textit{embedding} dan \textit{vector store}.
+    \item Pengembangan modul \textit{retriever} dan \textit{generator}.
+    \item Integrasi modul RAG dengan Digital Twin untuk memberikan penjelasan berbasis bukti.
+\end{itemize}
+
+\subsection{Pengembangan Antarmuka dan Visualisasi}
+
+Antarmuka sederhana akan dikembangkan untuk menampilkan:
+
+\begin{itemize}
+    \item Grafik glukosa aktual dan hasil prediksi.
+    \item Simulasi Digital Twin.
+    \item Penjelasan prediktif yang dihasilkan oleh RAG.
+\end{itemize}
+
+\subsection{Dokumentasi dan Penyusunan Laporan}
+
+Seluruh proses, hasil eksperimen, serta evaluasi sistem akan didokumentasikan untuk penyusunan laporan Tugas Akhir.
+
+\section{Desain Pengujian dan Evaluasi}
+
+Pengujian sistem dilakukan melalui beberapa tahap:
+
+\subsection{Verifikasi Sistem}
+
+Verifikasi mencakup:
+
+\begin{itemize}
+    \item Konsistensi preprocessing.
+    \item Stabilitas model selama pelatihan.
+    \item Kesesuaian pembaruan state pada Digital Twin.
+    \item Relevansi dokumen hasil retrieval pada modul RAG.
+\end{itemize}
+
+\subsection{Validasi Model Prediksi}
+
+Evaluasi dilakukan menggunakan metrik:
+
+\begin{itemize}
+    \item Root Mean Square Error (RMSE)
+    \item Mean Absolute Error (MAE)
+    \item Clarke Error Grid Analysis
+\end{itemize}
+
+\subsection{Evaluasi Integrasi Digital Twin dan RAG}
+
+Evaluasi dilakukan terhadap:
+
+\begin{itemize}
+    \item Konsistensi pembaruan state Digital Twin.
+    \item Akurasi konteks penjelasan yang diberikan RAG.
+    \item Keterbacaan insight bagi pengguna.
+\end{itemize}
+
+\section{Analisis Risiko dan Mitigasi}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{3.5cm}|p{4cm}|p{5cm}|}
+\hline
+\textbf{Risiko} & \textbf{Dampak} & \textbf{Mitigasi} \\
+\hline
+Kualitas data tidak konsisten & Model tidak stabil & Pembersihan data, normalisasi, pemeriksaan manual \\ \hline
+Overfitting & Generalisasi buruk & Regularisasi, dropout, early stopping \\ \hline
+Keterbatasan perangkat komputasi & Waktu pelatihan lebih lama & Penggunaan batch kecil, optimasi model, opsi GPU cloud \\ \hline
+RAG menghasilkan insight tidak relevan & Penjelasan menyesatkan & Perbaikan knowledge base, evaluasi retrieval \\ \hline
+Integrasi DT kompleks & Hambatan implementasi & Pendekatan bertahap, mulai dari versi minimal \\ \hline
+\end{tabular}
+\caption{Analisis Risiko dan Mitigasi}
+\end{table}
+
+\section{Timeline Pengerjaan}
+
+Timeline disusun berdasarkan periode Januari–Mei 2026, dengan pembagian per minggu. Format tabel mengikuti struktur jadwal pada laporan kerja praktik sebelumnya.
+
+\subsection*{Tabel Timeline Pelaksanaan Tugas Akhir (Januari–Mei 2026)}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{image/gantt-chart.png}
+    \caption{Timeline Pelaksanaan Tugas Akhir (Januari–Mei 2026)}
+    \label{gambar:gantt-chart}
+\end{figure}
+
+\clearpage

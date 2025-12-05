@@ -15,10 +15,10 @@ Namun demikian, sebagian besar sistem tersebut masih bersifat reaktif. Artinya, 
 
 Di Indonesia, sebagian besar pengelolaan data pasien diabetes masih dilakukan secara manual atau semi-digital. Pencatatan hasil pemeriksaan laboratorium, kadar glukosa darah, dan riwayat terapi umumnya dilakukan melalui sistem informasi rumah sakit yang belum terintegrasi antarfasilitas. Meskipun pemerintah telah mendorong adopsi \textit{Electronic Medical Record} (EMR), tingkat interoperabilitas antar sistem masih rendah \autocite{Harahap2023, Aisyah2024}. Kondisi ini menyebabkan data pasien sering kali terfragmentasi, sehingga sulit digunakan untuk analisis longitudinal maupun pengembangan model prediktif.
 
-\begin{figure}[t]
+\begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
-    \includegraphics[width=0.9\textwidth]{image/model_sistem_eksisting.png}
+    \includegraphics[width=0.9\textwidth]{image/Model_Eksisting_Sistem.jpg}
     \caption{Model konseptual sistem manajemen diabetes konvensional. Sistem saat ini terdiri atas subsistem klinis, pasien, dan perangkat medis dengan aliran data satu arah tanpa integrasi analitik cerdas.}
     \label{gambar:model-sistem-eksisting}
 \end{figure}
@@ -64,19 +64,7 @@ Permasalahan-permasalahan tersebut menunjukkan perlunya sistem yang mampu memanf
 
 Kebutuhan fungsional menggambarkan perilaku sistem yang diharapkan dari perspektif pengguna. Berdasarkan permasalahan yang diidentifikasi, kebutuhan fungsional dari sistem yang diusulkan meliputi:
 
-\begin{enumerate}
-    \item \textbf{Pemrosesan Data Simulatif:} sistem harus mampu membaca dan mengelola dataset simulatif seperti \textit{OhioT1DM Dataset} atau \textit{UVA/Padova Simulator} yang berisi variabel kadar glukosa, insulin, asupan karbohidrat, dan aktivitas fisik.
-    
-    \item \textbf{Prediksi Kadar Glukosa:} sistem harus mampu melakukan prediksi kadar glukosa darah jangka pendek berdasarkan data historis menggunakan algoritma \textit{machine learning} seperti LSTM atau model lain yang sesuai.
-    
-    \item \textbf{Evaluasi Akurasi:} sistem perlu menghitung metrik evaluasi seperti \textit{Root Mean Square Error (RMSE)}, \textit{Mean Absolute Error (MAE)}, dan \textit{Clarke Error Grid} untuk menilai keakuratan prediksi.
-    
-    \item \textbf{Visualisasi Hasil:} sistem harus menyediakan visualisasi grafik perubahan kadar glukosa aktual dan hasil prediksi agar pengguna (tenaga medis atau peneliti) dapat dengan mudah memahami performa sistem.
-    
-    \item \textbf{Simulasi Respons Pasien:} sistem perlu mampu mensimulasikan skenario perubahan kadar glukosa berdasarkan perubahan variabel input seperti dosis insulin atau konsumsi karbohidrat, sebagai representasi konsep \textit{digital twin}.
-    
-    \item \textbf{Integrasi Modul RAG (Retrieval-Augmented Generation):} sistem perlu memiliki kemampuan untuk melakukan pencarian informasi medis relevan dari basis pengetahuan eksternal (misalnya publikasi medis atau pedoman klinis) dan menggunakannya untuk memperkaya hasil analisis dan rekomendasi sistem.
-\end{enumerate}
+\input{table/tabelIII1.tex}
 
 Kebutuhan fungsional ini menjadi dasar dalam perancangan arsitektur sistem \textit{RAG Digital Twin}, di mana setiap modul berfungsi untuk menangani satu proses utama dari pipeline prediksi dan pembelajaran adaptif berbasis data.
 
@@ -84,19 +72,7 @@ Kebutuhan fungsional ini menjadi dasar dalam perancangan arsitektur sistem \text
 
 Kebutuhan nonfungsional berkaitan dengan aspek kualitas dan batasan teknis yang harus dipenuhi agar sistem dapat berjalan secara optimal. Beberapa kebutuhan nonfungsional yang diidentifikasi adalah sebagai berikut:
 
-\begin{enumerate}
-    \item \textbf{Kinerja:} sistem harus mampu melakukan pelatihan dan prediksi dalam waktu yang efisien dengan memanfaatkan sumber daya komputasi yang terbatas, misalnya pada komputer pribadi dengan GPU menengah.
-    
-    \item \textbf{Akurasi:} sistem diharapkan mampu menghasilkan nilai RMSE $\leq 25$ mg/dL, mendekati standar \textit{state-of-the-art} pada penelitian prediksi glukosa berbasis \textit{machine learning}.
-    
-    \item \textbf{Keterjangkauan:} sistem harus menggunakan data simulatif yang tersedia secara publik tanpa memerlukan biaya lisensi atau perangkat medis khusus.
-    
-    \item \textbf{Keandalan:} sistem harus mampu menangani data yang hilang atau tidak lengkap dengan melakukan \textit{data imputation} dan validasi sebelum pelatihan model.
-    
-    \item \textbf{Kemudahan Penggunaan:} antarmuka sistem perlu dirancang sederhana dan intuitif agar dapat digunakan oleh peneliti atau tenaga medis tanpa keahlian teknis mendalam.
-    
-    \item \textbf{Keamanan dan Privasi:} meskipun menggunakan data simulatif, sistem harus tetap mematuhi prinsip keamanan data dan privasi pengguna, terutama jika di masa depan diintegrasikan dengan data klinis nyata.
-\end{enumerate}
+\input{table/tabelIII2.tex}
 
 Kebutuhan fungsional dan nonfungsional tersebut menjadi acuan dalam perancangan sistem yang akan dijelaskan lebih lanjut pada Bab IV. Sistem ini diharapkan mampu mengisi kesenjangan antara kebutuhan prediksi glukosa yang akurat dan keterbatasan infrastruktur digital di Indonesia melalui penerapan konsep \textit{RAG Digital Twin} berbasis data simulatif.
 
@@ -122,23 +98,7 @@ Berdasarkan tinjauan pustaka dan analisis kebutuhan, terdapat beberapa pendekata
     Pendekatan ini menggabungkan kemampuan prediksi \textit{machine learning} dengan sistem pencarian pengetahuan eksternal berbasis \textit{Retrieval-Augmented Generation (RAG)}. Framework ini tidak hanya melakukan prediksi kadar glukosa, tetapi juga dapat memberikan justifikasi berbasis data medis atau literatur ilmiah \autocite{Lewis2020, Borgeaud2022}. Dengan menggunakan data simulatif publik, framework ini dapat diimplementasikan tanpa perangkat medis khusus, sekaligus menyediakan kemampuan pembelajaran adaptif yang menyerupai \textit{digital twin} klinis.
 \end{enumerate}
 
-\begin{table}[H]
-\caption{Perbandingan alternatif solusi untuk prediksi kadar glukosa darah.}
-\label{tbl:alternatif-solusi}
-\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} | p{3cm} | }
-\hline
-\textbf{Pendekatan} & \textbf{Akurasi Prediksi} & \textbf{Kompleksitas Implementasi} & \textbf{Kebutuhan Infrastruktur} & \textbf{Kesesuaian Konteks Indonesia} \\
-\hline
-Sistem Berbasis Aturan & Rendah (karena statis) & Rendah & Rendah & Sedang \\
-\hline
-Model \textit{Machine Learning} & Sedang–Tinggi & Sedang & Sedang & Tinggi \\
-\hline
-\textit{Digital Twin} Fisiologis & Tinggi & Sangat Tinggi & Sangat Tinggi (perlu CGM, EMR) & Rendah \\
-\hline
-\textit{RAG Digital Twin Framework} & Tinggi & Sedang & Rendah (berbasis data simulatif) & Sangat Tinggi \\
-\hline
-\end{tabular}
-\end{table}
+\input{table/tabelIII3.tex}
 
 \subsection{Analisis Penentuan Solusi}
 

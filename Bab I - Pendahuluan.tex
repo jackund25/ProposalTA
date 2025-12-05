@@ -23,13 +23,13 @@ Dari uraian tersebut, tampak bahwa pengelolaan diabetes di Indonesia masih mengh
 
 Berdasarkan latar belakang tersebut, permasalahan utama dalam tugas akhir ini adalah kesenjangan antara framework digital twin yang canggih (seperti yang dikembangkan oleh \textcite{Rad2024}) dengan kemampuan implementasi di Indonesia yang terkendala oleh keterbatasan infrastruktur EHR, tingginya biaya perangkat monitoring real-time, dan kompleksitas teknis yang memerlukan expertise spesialis. Kesenjangan ini penting untuk diatasi karena mayoritas penderita diabetes di Indonesia (74\%) belum terdiagnosis dan memerlukan sistem prediktif yang terjangkau untuk deteksi dini dan manajemen yang lebih baik. 
 
-Berdasarkan permasalahan tersebut, penelitian ini difokuskan untuk menelusuri bagaimana konsep digital twin dapat disederhanakan dan diterapkan secara kontekstual di Indonesia, khususnya dalam mendukung prediksi kadar glukosa darah pasien diabetes tipe 2 berbasis data simulatif.
+Berdasarkan permasalahan tersebut, penelitian ini difokuskan untuk menelusuri bagaimana konsep digital twin dapat disederhanakan dan diterapkan secara kontekstual di Indonesia, khususnya dalam mendukung prediksi kadar glukosa darah pasien diabetes tipe 2.
 
 Secara khusus, rumusan masalah dalam tugas akhir ini adalah sebagai berikut:
 
 \begin{enumerate}
     \item Bagaimana menganalisis dan memformulasikan kebutuhan arsitektur sistem digital twin yang disederhanakan untuk prediksi kadar glukosa darah tanpa ketergantungan pada Personal Health Knowledge Graph dan infrastruktur HL7 FHIR?
-    \item Bagaimana mengembangkan model prediktif kadar glukosa darah berbasis data simulatif dari dataset publik menggunakan pendekatan pembelajaran mesin?
+    \item Bagaimana mengembangkan model prediktif kadar glukosa darah menggunakan pendekatan pembelajaran mesin?
     \item Bagaimana metode validasi yang tepat untuk memastikan hasil prediksi sistem digital twin yang disederhanakan memiliki akurasi yang sebanding dengan pendekatan state-of-the-art?
     \item Bagaimana sistem digital twin yang disederhanakan ini dapat digunakan sebagai alat bantu prediksi yang feasible untuk implementasi di fasilitas kesehatan dengan keterbatasan infrastruktur?
 \end{enumerate}
@@ -43,7 +43,7 @@ Secara khusus, tujuan penelitian ini meliputi:
 
 \begin{enumerate}
     \item Merumuskan kebutuhan dan desain konseptual sistem digital twin yang disederhanakan dengan pendekatan pembelajaran mesin langsung, tanpa memerlukan pengembangan knowledge graph dan integrasi HL7 FHIR.
-    \item Mengembangkan modul prediktif kadar glukosa berbasis pembelajaran mesin (LSTM atau Random Forest) yang dapat beroperasi menggunakan data minimal dari dataset simulatif publik.
+    \item Mengembangkan modul prediktif kadar glukosa berbasis pembelajaran mesin (LSTM atau Random Forest) yang dapat beroperasi menggunakan data minimal.
     \item Melakukan validasi terhadap hasil prediksi sistem menggunakan dataset terbuka (OhioT1DM Dataset atau UVA/Padova Simulator) dengan metrik evaluasi standar seperti RMSE, MAE, dan Clarke Error Grid Analysis.
     \item Mengevaluasi akurasi dan reliabilitas sistem dalam memprediksi perubahan kadar glukosa darah dan membandingkannya dengan baseline pendekatan yang ada.
 \end{enumerate}
@@ -56,7 +56,6 @@ Kriteria keberhasilan tugas akhir ini adalah terciptanya prototipe sistem yang m
 Penelitian ini dibatasi oleh hal-hal berikut:
 
 \begin{enumerate}
-    \item Data yang digunakan berasal dari dataset terbuka (OhioT1DM Dataset atau UVA/Padova Simulator) tanpa pengumpulan data pasien nyata.
     \item Sistem tidak melibatkan perangkat keras, sensor IoT, atau integrasi dengan sistem EHR yang ada.
     \item Fokus penelitian adalah pada pengembangan dan pengujian sistem digital twin berbasis perangkat lunak dengan pendekatan pembelajaran mesin langsung, tanpa implementasi Personal Health Knowledge Graph.
     \item Model hanya mencakup prediksi kadar glukosa berdasarkan variabel pendukung yang tersedia dalam dataset (asupan karbohidrat, dosis insulin, aktivitas fisik), tanpa melibatkan faktor genetik, psikologis, atau data multiomic.
@@ -73,7 +72,7 @@ Tahapan metodologi dirancang untuk memastikan proses penelitian berjalan secara 
 
 Melakukan kajian pustaka terhadap konsep digital twin, pengelolaan penyakit diabetes, serta penelitian terdahulu terkait model simulatif dan prediktif. Sumber literatur berasal dari jurnal ilmiah bereputasi seperti IEEE Xplore, ScienceDirect, Nature Digital Medicine, dan Journal of Personalized Medicine. Pencarian literatur dilakukan dengan kata kunci ``digital twin diabetes'', ``glucose prediction machine learning'', ``diabetes simulation model'', ``simplified digital twin framework'', dan kombinasi kata kunci terkait.
 
-Literatur yang dikumpulkan kemudian dikelompokkan berdasarkan tema: (a) konsep dan arsitektur digital twin dalam kesehatan, dengan fokus pada framework state-of-the-art seperti \textcite{Rad2024} dan \textcite{Zhang2024}; (b) metode prediksi glukosa darah menggunakan machine learning dan deep learning; (c) dataset simulatif diabetes yang tersedia secara publik; (d) metrik evaluasi sistem prediktif kesehatan; dan (e) tantangan implementasi teknologi kesehatan digital di negara berkembang.
+Literatur yang dikumpulkan kemudian dikelompokkan berdasarkan tema: (a) konsep dan arsitektur digital twin dalam kesehatan, dengan fokus pada framework state-of-the-art seperti \textcite{Rad2024} dan \textcite{Zhang2024}; (b) metode prediksi glukosa darah menggunakan machine learning dan deep learning; (c) dataset diabetes yang tersedia secara publik; (d) metrik evaluasi sistem prediktif kesehatan; dan (e) tantangan implementasi teknologi kesehatan digital di negara berkembang.
 
 \subsection{Analisis Kebutuhan dan Perancangan Sistem}
 
