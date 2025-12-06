@@ -59,7 +59,9 @@ Melalui arsitektur tersebut, sistem DT memungkinkan analisis prediktif yang lebi
 
 \textcite{Zhang2024} memperluas konsep ini dengan mengintegrasikan data multi-omics ke dalam model DT untuk memprediksi progresi penyakit \textit{Type 2 Diabetes Mellitus} (T2DM). Pendekatan tersebut menunjukkan potensi besar DT dalam mendukung \textit{personalized medicine} dengan memanfaatkan data fisiologis, genetik, dan perilaku secara holistik.
 
-Meskipun hasilnya menjanjikan, sebagian besar penerapan DT di bidang kesehatan masih menghadapi kendala berupa kebutuhan akan infrastruktur teknologi tinggi, biaya perangkat medis, dan ketersediaan data real-time yang memadai \autocite{Cappon2024, Rad2024}. Tantangan ini semakin besar di negara berkembang, di mana infrastruktur digital dan rekam medis elektronik belum merata. Oleh karena itu, adaptasi konsep DT dengan pendekatan berbasis data simulatif dan kecerdasan buatan menjadi alternatif yang relevan untuk konteks sistem kesehatan seperti di Indonesia.
+Meskipun hasilnya menjanjikan, sebagian besar penerapan DT di bidang kesehatan masih menghadapi kendala berupa kebutuhan akan infrastruktur teknologi tinggi, biaya perangkat medis, dan ketersediaan data real-time yang memadai \autocite{Cappon2024, Rad2024}. Tantangan ini semakin besar di negara berkembang, di mana infrastruktur digital dan rekam medis elektronik belum merata. Oleh karena itu, adaptasi konsep DT dengan pendekatan berbasis data simulatif dan kecerdasan buatan menjadi alternatif yang relevan untuk konteks sistem kesehatan seperti di Indonesia. 
+
+Selain pendekatan berbasis model fisiologis yang kompleks, perkembangan terkini juga menunjukkan tren positif pada pendekatan \textit{Data-Driven Digital Twin}. Berbeda dengan model mekanistik yang memerlukan parameter biologis mendalam, pendekatan berbasis data memanfaatkan algoritma pembelajaran mesin untuk mempelajari pola dinamika sistem dari data historis \autocite{Woldaregay2019}. Pendekatan ini dinilai lebih fleksibel dan \textit{feasible} untuk diterapkan pada kondisi dengan keterbatasan infrastruktur sensor karena dapat beroperasi menggunakan data observasional tanpa mengurangi esensi kemampuan prediktif dan simulasi dari konsep \textit{Digital Twin} itu sendiri.
 
 \section{Manajemen Diabetes dan Pendekatan Digital}
 
@@ -69,7 +71,7 @@ Pendekatan konvensional dalam manajemen T2DM melibatkan pemantauan kadar glukosa
 
 Untuk meningkatkan efektivitas pengelolaan diabetes, berbagai teknologi digital telah dikembangkan, antara lain \textit{Continuous Glucose Monitoring} (CGM) dan \textit{insulin pump} yang memungkinkan pemantauan dan penyesuaian terapi secara real-time \autocite{Battelino2019}. Sistem ini mengubah paradigma pengelolaan diabetes dari berbasis manual menjadi berbasis data (\textit{data-driven management}). Selain itu, penggunaan aplikasi mobile dan perangkat \textit{wearable} juga memungkinkan pasien untuk melacak pola makan, aktivitas fisik, serta kadar glukosa harian secara otomatis.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
     \includegraphics[width=0.85\textwidth]{image/diabetes_management_cgm_battelino2019.png}
@@ -83,7 +85,30 @@ Selanjutnya, kemajuan dalam bidang \textit{machine learning} memungkinkan analis
 
 Meskipun teknologi tersebut memberikan kemajuan signifikan, penerapannya di Indonesia masih terbatas. Studi oleh \textcite{Ramadaniati2024} menunjukkan bahwa harga perangkat CGM di Indonesia relatif tinggi, dengan biaya yang dapat mencapai satu hingga dua bulan gaji rata-rata pasien. Kondisi ini menimbulkan tantangan dalam pemerataan akses terhadap teknologi pemantauan digital, terutama di fasilitas kesehatan primer.
 
-Oleh karena itu, diperlukan pendekatan alternatif yang lebih terjangkau namun tetap memiliki kemampuan prediktif tinggi. Salah satu solusi yang potensial adalah penggunaan model \textit{Digital Twin} berbasis data simulatif, yang dapat menggantikan kebutuhan perangkat real-time melalui pemanfaatan data historis atau sintetis untuk pelatihan model prediksi glukosa. Pendekatan ini membuka peluang bagi pengembangan sistem prediktif adaptif yang relevan untuk konteks sumber daya terbatas seperti di Indonesia.
+Terlepas dari keunggulan data granularitas tinggi yang ditawarkan CGM, metode Pemantauan Gula Darah Mandiri (PGDM) atau \textit{Self-Monitoring of Blood Glucose} (SMBG) tetap menjadi standar emas perawatan di banyak negara berkembang karena faktor biaya dan ketersediaan \autocite{Ramadaniati2024}. Studi menunjukkan bahwa data SMBG yang dicatat secara terstruktur dan konsisten---metode yang dikenal sebagai \textit{Ecological Momentary Assessment} (EMA)---tetap memiliki validitas klinis yang tinggi untuk memprediksi tren glikemik harian. Oleh karena itu, pengembangan sistem cerdas yang mampu mengoptimalkan data SMBG menjadi solusi yang lebih inklusif dan realistis untuk konteks demografi Indonesia dibandingkan ketergantungan penuh pada sensor CGM.
+
+Berangkat dari kondisi tersebut, diperlukan pendekatan alternatif yang terjangkau namun tetap memiliki kemampuan prediktif tinggi. Salah satu solusi yang potensial adalah penggunaan model \textit{Digital Twin} berbasis data simulatif, yang dapat menggantikan kebutuhan perangkat real-time melalui pemanfaatan data historis atau sintetis untuk pelatihan model prediksi glukosa. Pendekatan ini membuka peluang bagi pengembangan sistem prediktif adaptif yang relevan untuk konteks sumber daya terbatas seperti di Indonesia.
+
+\section{Faktor-Faktor yang Mempengaruhi Kadar Gula Darah}
+
+Kadar glukosa darah merupakan variabel fisiologis yang sangat dinamis dan dipengaruhi oleh interaksi kompleks berbagai faktor internal maupun eksternal. Pemahaman mendalam mengenai faktor-faktor ini menjadi landasan penting dalam pengembangan model prediksi yang akurat. Secara umum, terdapat tiga variabel utama yang berkontribusi signifikan terhadap fluktuasi glukosa harian, yaitu asupan nutrisi, aktivitas fisik, dan kondisi psikologis.
+
+\subsection{Asupan Nutrisi dan Karbohidrat}
+Asupan makanan, khususnya karbohidrat, memiliki dampak langsung dan paling signifikan terhadap kenaikan kadar glukosa darah pascamakan (\textit{postprandial}). Karbohidrat yang dikonsumsi akan dihidrolisis menjadi glukosa dan diserap ke dalam aliran darah, menyebabkan lonjakan kadar gula darah dalam waktu singkat. Pada pasien T2DM, gangguan respons insulin menyebabkan tubuh gagal mengembalikan kadar glukosa ke rentang normal dengan cepat \autocite{ADA2023}. Oleh karena itu, pencatatan jumlah asupan karbohidrat (\textit{carbohydrate counting}) menjadi variabel input yang krusial dalam algoritma prediksi glukosa \autocite{Woldaregay2019}.
+
+\subsection{Aktivitas Fisik}
+Aktivitas fisik berperan sebagai mekanisme regulasi alami yang membantu menurunkan kadar glukosa darah. Saat melakukan aktivitas fisik atau olahraga, otot rangka meningkatkan pengambilan glukosa dari darah untuk digunakan sebagai energi, bahkan tanpa memerlukan peningkatan insulin yang signifikan. Selain itu, aktivitas fisik rutin dapat meningkatkan sensitivitas insulin jangka panjang \autocite{Colberg2016}. Dalam konteks pemodelan digital twin, data durasi dan intensitas aktivitas fisik digunakan untuk mensimulasikan laju penurunan glukosa (\textit{glucose clearance rate}).
+
+\subsection{Faktor Psikologis dan Stres}
+Selain faktor fisik, kondisi psikologis seperti stres memiliki pengaruh yang sering diabaikan namun signifikan terhadap manajemen diabetes. Stres psikologis mengaktifkan sumbu \textit{Hypothalamic-Pituitary-Adrenal} (HPA) dan sistem saraf simpatis, yang memicu pelepasan hormon stres seperti kortisol dan adrenalin (katekolamin) \autocite{Hackett2017}. 
+
+Secara fisiologis, hormon-hormon ini bekerja antagonis terhadap insulin dengan cara:
+\begin{itemize}
+    \item Merangsang glikogenolisis (pemecahan glikogen menjadi glukosa) di hati.
+    \item Meningkatkan glukoneogenesis (pembentukan glukosa baru).
+    \item Meningkatkan resistensi insulin pada jaringan perifer.
+\end{itemize}
+Akibatnya, episode stres yang tinggi dapat menyebabkan hiperglikemia meskipun pasien telah menjaga pola makan dan obat-obatan. Oleh karena itu, integrasi variabel tingkat stres ke dalam sistem prediksi sangat diperlukan untuk meningkatkan akurasi model pada kondisi dunia nyata.
 
 \section{Metode Machine Learning untuk Prediksi Kadar Glukosa}
 
@@ -93,7 +118,7 @@ Menurut \textcite{Woldaregay2019}, model pembelajaran mesin dapat mempelajari hu
 
 Beberapa algoritma yang umum digunakan dalam prediksi glukosa antara lain \textit{Random Forest (RF)}, \textit{Support Vector Regression (SVR)}, dan model berbasis jaringan saraf dalam seperti \textit{Long Short-Term Memory (LSTM)} \autocite{li2022time}. Model LSTM populer karena kemampuannya memproses data deret waktu dan mempertahankan informasi jangka panjang melalui mekanisme \textit{memory cell} dan \textit{gating}. 
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
     \includegraphics[width=0.95\textwidth]{image/lstm_architecture.png}
@@ -164,7 +189,7 @@ Celah penelitian ini menjadi dasar pengembangan \textbf{\textit{RAG Digital Twin
 
 \section{Tantangan Implementasi di Indonesia}
 
-Penerapan \textit{Digital Twin} dalam konteks Indonesia menghadapi beberapa hambatan struktural. Pertama, tingkat kesiapan teknologi informasi dan komunikasi (TIK) antar fasilitas kesehatan masih bervariasi \cite{Aisyah2024}. Kedua, perangkat medis pendukung seperti \textit{Continuous Glucose Monitoring (CGM)} dan pompa insulin masih tergolong mahal dan belum tersedia secara luas \cite{Ramadaniati2024}. 
+Penerapan \textit{Digital Twin} dalam konteks Indonesia menghadapi beberapa hambatan struktural. Pertama, tingkat kesiapan teknologi informasi dan komunikasi (TIK) antar fasilitas kesehatan masih bervariasi \autocite{Aisyah2024}. Kedua, perangkat medis pendukung seperti \textit{Continuous Glucose Monitoring (CGM)} dan pompa insulin masih tergolong mahal dan belum tersedia secara luas \autocite{Ramadaniati2024}. 
 
 Selain itu, penelitian oleh \textcite{Harahap2023} menunjukkan bahwa integrasi data rekam medis elektronik masih terhambat oleh rendahnya adopsi sistem \textit{Electronic Medical Record (EMR)}. Penelitian \textcite{Abodunrin2020} di negara berkembang lain memperlihatkan bahwa kesadaran dan pelatihan tenaga medis terkait sistem digital kesehatan juga menjadi faktor penentu keberhasilan implementasi. 
 

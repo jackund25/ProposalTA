@@ -1,13 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.10.22)  5 DEC 2025 18:58
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.10.22)  6 DEC 2025 06:43
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Asus/Documents/__KULIAH/Semester 7/Proposal TA/ProposalTA/18222003_
-ProposalTA.tex"
-
-(c:/Users/Asus/Documents/__KULIAH/Semester 7/Proposal TA/ProposalTA/18222003_Pr
-oposalTA.tex
+**./18222003_ProposalTA.tex
+(18222003_ProposalTA.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
@@ -1160,17 +1156,17 @@ Overfull \hbox (64.45271pt too wide) in paragraph at lines 299--304
 \openout5 = `18222003_ProposalTA.toc'.
 
  [3] (18222003_ProposalTA.lof
-Overfull \hbox (0.92789pt too wide) in paragraph at lines 316--316
+Overfull \hbox (0.92789pt too wide) in paragraph at lines 310--310
  [][] [][][]\TU/TimesNewRoman(0)/m/n/12 Model konseptual sistem usulan berbasis
  \TU/TimesNewRoman(0)/m/it/12 Digital Twin \TU/TimesNewRoman(0)/m/n/12 dan \TU/
 TimesNewRoman(0)/m/it/12 Retrieval- 
  []
 
-)
+[4])
 \tf@lof=\write6
 \openout6 = `18222003_ProposalTA.lof'.
 
- [4] [5] (18222003_ProposalTA.lot)
+ [5] (18222003_ProposalTA.lot)
 \tf@lot=\write7
 \openout7 = `18222003_ProposalTA.lot'.
 
@@ -1239,18 +1235,13 @@ Bab I.
 
 
 ]
-Overfull \hbox (1.41415pt too wide) in paragraph at lines 13--14
-[]\TU/TimesNewRoman(0)/m/n/12 Meskipun framework-framework tersebut menunjukkan
- hasil yang menjanjikan, im-
+Overfull \hbox (0.65244pt too wide) in paragraph at lines 13--14
+[]\TU/TimesNewRoman(0)/m/n/12 Meskipun \TU/TimesNewRoman(0)/m/it/12 framework-f
+ramework \TU/TimesNewRoman(0)/m/n/12 tersebut menunjukkan hasil yang menjanjika
+n, im-
  []
 
-[2] [3] [4] [5] [6]
-Overfull \hbox (4.67508pt too wide) in paragraph at lines 125--126
-[]\TU/TimesNewRoman(0)/b/n/12 Clarke Error Grid Analysis (EG)\TU/TimesNewRoman(
-0)/m/n/12 : Mengukur clinical accuracy dengan meng-
- []
-
-) (Bab II - Studi-Literatur.tex [7]
+[2] [3] [4] [5] [6]) (Bab II - Studi-Literatur.tex [7]
 Bab II.
 File: image/dt_concept_grieves2017.png Graphic file (type bmp)
 <image/dt_concept_grieves2017.png>
@@ -1268,26 +1259,22 @@ File: image/dt_healthcare_cappon2024.png Graphic file (type bmp)
  [10] [11]
 File: image/diabetes_management_cgm_battelino2019.png Graphic file (type bmp)
 <image/diabetes_management_cgm_battelino2019.png>
+ [12]
 
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 82.
 
-Package biblatex-chicago Warning: Empty Ibidem citation on input line 80.
-
-[12]
-Overfull \hbox (2.8655pt too wide) in paragraph at lines 94--95
+[13] [14] [15]
+Overfull \hbox (2.8655pt too wide) in paragraph at lines 119--120
 \TU/TimesNewRoman(0)/m/n/12 Model LSTM populer karena kemampuannya memproses da
 ta deret waktu dan mem-
  []
 
 File: image/lstm_architecture.png Graphic file (type bmp)
 <image/lstm_architecture.png>
-[13]
-
-Package biblatex-chicago Warning: Empty Ibidem citation on input line 106.
-
-[14]
+[16] [17]
 File: image/rag_framework_lewis2020.png Graphic file (type bmp)
 <image/rag_framework_lewis2020.png>
- [15] [16] (table/tabelII1.tex
+ [18] [19] (table/tabelII1.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--5
 []|\TU/TimesNewRoman(0)/b/n/12 Peneliti
  []
@@ -1553,151 +1540,112 @@ Overfull \hbox (19.54721pt too wide) in alignment at lines 19--40
  [] [] [] [] 
  []
 
-[17] [18])) (Bab III - Analisis-Masalah.tex [19]
+[20]) [21]) (Bab III - Analisis-Masalah.tex [22]
 Bab III.
-[20
+[23
 
 ]
 File: image/Model_Eksisting_Sistem.jpg Graphic file (type bmp)
 <image/Model_Eksisting_Sistem.jpg>
- [21]
-
-Package biblatex-chicago Warning: Empty Ibidem citation on input line 54.
-
-[22] (table/tabelIII1.tex
-Overfull \hbox (23.99997pt too wide) in paragraph at lines 4--21
- [][] 
+ [24] [25] (table/tabelIII1.tex [26]) (table/tabelIII2.tex) [27] [28]
+Overfull \hbox (0.81137pt too wide) in paragraph at lines 101--102
+[]\TU/TimesNewRoman(0)/m/it/12 Kelebihan\TU/TimesNewRoman(0)/m/n/12 : Akurasi p
+rediksi numerik sangat tinggi untuk data deret wak-
  []
 
-) [23] (table/tabelIII2.tex
-Overfull \hbox (23.99997pt too wide) in paragraph at lines 4--21
- [][] 
- []
-
-) [24] [25] (table/tabelIII3.tex
-Underfull \hbox (badness 3758) in paragraph at lines 6--6
-[]\TU/TimesNewRoman(0)/b/n/12 Akurasi Pre-
+[29] (table/tabelIII3.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+[]\TU/TimesNewRoman(0)/b/n/10 1. Rule-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--6
-[]\TU/TimesNewRoman(0)/b/n/12 Kompleksitas
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+[]\TU/TimesNewRoman(0)/b/n/10 2. ML
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--6
-[]\TU/TimesNewRoman(0)/b/n/12 Kebutuhan
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+[]\TU/TimesNewRoman(0)/b/n/10 Prediksi Nu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
-[]\TU/TimesNewRoman(0)/b/n/12 Kesesuaian
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+[]\TU/TimesNewRoman(0)/b/n/10 Simulasi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
-\TU/TimesNewRoman(0)/b/n/12 Konteks
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+[]\TU/TimesNewRoman(0)/b/n/10 Penjelasan/
  []
 
 
-Underfull \hbox (badness 5893) in paragraph at lines 8--8
-[]\TU/TimesNewRoman(0)/m/n/12 Sistem Ber-
+Underfull \hbox (badness 3954) in paragraph at lines 15--15
+[]\TU/TimesNewRoman(0)/b/n/10 Sangat Ba-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]\TU/TimesNewRoman(0)/m/n/12 Model
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[]\TU/TimesNewRoman(0)/b/n/10 Input Data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\TU/TimesNewRoman(0)/m/it/12 Machine
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[]\TU/TimesNewRoman(0)/b/n/10 Ya (Logbo-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]\TU/TimesNewRoman(0)/m/n/12 Sedang–
- []
-
-
-Underfull \hbox (badness 1748) in paragraph at lines 12--12
-[]\TU/TimesNewRoman(0)/m/n/12 Sangat Tinggi
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--12
-\TU/TimesNewRoman(0)/m/n/12 (perlu CGM,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--14
-[]\TU/TimesNewRoman(0)/m/n/12 Rendah (ber-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--14
-\TU/TimesNewRoman(0)/m/n/12 basis data
- []
-
-
-Underfull \hbox (badness 1314) in paragraph at lines 14--15
-[]\TU/TimesNewRoman(0)/m/n/12 Sangat Ting-
- []
-
-
-Overfull \hbox (3.09444pt too wide) in paragraph at lines 4--17
- [][] 
- []
-
-) [26]) (Bab IV - Desain-Konsep-Solusi.tex [27]
+)) (Bab IV - Desain-Konsep-Solusi.tex [30]
 Bab IV.
+
+Overfull \hbox (8.72029pt too wide) in paragraph at lines 18--19
+\TU/TimesNewRoman(0)/m/n/12 mengintegrasikan kemampuan prediksi, simulasi, dan 
+penjelasan cerdas. Gambar [][]IV.1[][]
+ []
+
 File: image/Model_Konseptual_Sistem.jpg Graphic file (type bmp)
 <image/Model_Konseptual_Sistem.jpg>
-[28
+[31
 
 ]
-Overfull \hbox (5.74635pt too wide) in paragraph at lines 38--39
-[]\TU/TimesNewRoman(0)/b/n/12 RAG Knowledge Layer\TU/TimesNewRoman(0)/m/n/12 : 
-Modul yang mengintegrasikan \TU/TimesNewRoman(0)/m/it/12 Retrieval-Augmented
+Overfull \hbox (2.3563pt too wide) in paragraph at lines 41--42
+[]\TU/TimesNewRoman(0)/b/n/12 Preprocessing\TU/TimesNewRoman(0)/m/n/12 : Member
+sihkan data log harian dan menangani nilai yang
+ []
+
+[32]
+Overfull \hbox (7.88754pt too wide) in paragraph at lines 68--69
+[]\TU/TimesNewRoman(0)/b/n/12 Access Control\TU/TimesNewRoman(0)/m/n/12 : Penga
+turan hak akses berbasis peran (\TU/TimesNewRoman(0)/m/it/12 Role-Based Access
+ []
+
+(table/tabelIV1.tex
+Underfull \hbox (badness 1348) in paragraph at lines 35--35
+[]\TU/TimesNewRoman(0)/b/n/10 Reaktif\TU/TimesNewRoman(0)/m/n/10 : Tindakan dia
+mbil sete-
  []
 
 
-Overfull \hbox (2.2519pt too wide) in paragraph at lines 38--39
-\TU/TimesNewRoman(0)/m/n/12 panduan klinis. Modul ini mengakses basis pengetahu
-an eksternal untuk mem-
- []
-
-[29] (table/tabelIV1.tex
-Overfull \hbox (7.54723pt too wide) in alignment at lines 1--8
- [] [] [] 
+Underfull \hbox (badness 6625) in paragraph at lines 35--35
+[]\TU/TimesNewRoman(0)/b/n/10 Proaktif & Preventif\TU/TimesNewRoman(0)/m/n/10 :
+ Sistem
  []
 
 
-Overfull \hbox (7.54723pt too wide) in alignment at lines 8--14
- [] [] [] 
+Underfull \hbox (badness 1348) in paragraph at lines 35--35
+[]\TU/TimesNewRoman(0)/m/n/10 Terbatas pada kadar glukosa dan
  []
 
 
-Overfull \hbox (7.54723pt too wide) in alignment at lines 14--18
- [] [] [] 
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]\TU/TimesNewRoman(0)/m/n/10 Tidak tersedia. Pasien hanya
  []
 
 
-Overfull \hbox (7.54723pt too wide) in alignment at lines 18--21
- [] [] [] 
+Underfull \hbox (badness 5008) in paragraph at lines 35--35
+\TU/TimesNewRoman(0)/m/n/10 teks \TU/TimesNewRoman(0)/b/n/10 rekomendasi aksi \
+TU/TimesNewRoman(0)/m/n/10 berbasis
  []
 
-
-Underfull \hbox (badness 5548) in paragraph at lines 28--29
-[]|\TU/TimesNewRoman(0)/m/n/12 Representasi pa-
- []
-
-
-Overfull \hbox (7.54723pt too wide) in alignment at lines 21--48
- [] [] [] 
- []
-
-)
+) [33]
 File: image/UseCase_Diagram.jpg Graphic file (type bmp)
 <image/UseCase_Diagram.jpg>
 
@@ -1705,20 +1653,32 @@ File: image/UseCase_Diagram.jpg Graphic file (type bmp)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (6.32417pt too wide) in paragraph at lines 62--63
+Overfull \hbox (6.32417pt too wide) in paragraph at lines 90--91
 []\TU/TimesNewRoman(0)/m/n/12 Gambar [][]IV.2[][] memperlihatkan interaksi anta
 ra aktor dengan sistem. Deskripsi masing-
  []
 
-[30] [31]
-Overfull \hbox (24.9075pt too wide) in paragraph at lines 83--84
-\TU/TimesNewRoman(0)/m/it/12 Communication diagram \TU/TimesNewRoman(0)/m/n/12 
-menggambarkan interaksi dinamis antara komponen-komponen
+[34] [35]
+File: image/BPMN_System.png Graphic file (type bmp)
+<image/BPMN_System.png>
+ [36]
+Overfull \hbox (6.3693pt too wide) in paragraph at lines 133--134
+[]\TU/TimesNewRoman(0)/m/n/12 Jalur \TU/TimesNewRoman(0)/b/n/12 ”Tidak (Aman)”\
+TU/TimesNewRoman(0)/m/n/12 : Jika prediksi normal, sistem langsung meng-
  []
 
-File: image/Communication_Diagram.jpg Graphic file (type bmp)
-<image/Communication_Diagram.jpg>
-[32] [33] (table/tabelIV2.tex
+
+Overfull \hbox (2.66684pt too wide) in paragraph at lines 136--137
+[]\TU/TimesNewRoman(0)/b/n/12 Perbarui UI\TU/TimesNewRoman(0)/m/n/12 : Aktivita
+s akhir sistem untuk memutakhirkan tampilan apli-
+ []
+
+File: image/ML_Pipeline.png Graphic file (type bmp)
+<image/ML_Pipeline.png>
+[37]
+File: image/RAG_Pipeline.png Graphic file (type bmp)
+<image/RAG_Pipeline.png>
+ [38] (table/tabelIV2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--5
 []|\TU/TimesNewRoman(0)/b/n/12 Functional Requirements
  []
@@ -1738,69 +1698,97 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--11
 []|\TU/TimesNewRoman(0)/b/n/12 Non-Functional Require-
  []
 
-)) (Bab V - Rencana-Selanjutnya.tex [34]
+)) (Bab V - Rencana-Selanjutnya.tex [39]
 Bab V.
 
-Overfull \hbox (12.07547pt too wide) in paragraph at lines 8--9
-\TU/TimesNewRoman(0)/m/n/12 ngun prototipe sistem prediksi glukosa berbasis Dig
-ital Twin dan Retrieval-Augmented
+Overfull \hbox (9.3743pt too wide) in paragraph at lines 7--8
+\TU/TimesNewRoman(0)/m/n/12 ngun prototipe sistem prediksi glukosa berbasis \TU
+/TimesNewRoman(0)/m/it/12 Digital Twin \TU/TimesNewRoman(0)/m/n/12 dan \TU/Time
+sNewRoman(0)/m/it/12 Retrieval-Augmented
  []
 
-[35
+[40
 
-] [36]
-Underfull \hbox (badness 3281) in paragraph at lines 125--125
-[]\TU/TimesNewRoman(0)/m/n/12 Kualitas data tidak
- []
-
-
-Underfull \hbox (badness 1688) in paragraph at lines 126--126
-[]\TU/TimesNewRoman(0)/m/n/12 Regularisasi, dropout, early
+] [41] [42] (table/tabelV1.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+[]\TU/TimesNewRoman(0)/m/n/12 Keterbatasan kom-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-[]\TU/TimesNewRoman(0)/m/n/12 Keterbatasan per-
+Underfull \hbox (badness 1742) in paragraph at lines 9--9
+\TU/TimesNewRoman(0)/m/n/12 putasi lokal (Tanpa
  []
 
 
-Underfull \hbox (badness 2529) in paragraph at lines 127--127
-[]\TU/TimesNewRoman(0)/m/n/12 Waktu pelatihan lebih
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]\TU/TimesNewRoman(0)/m/n/12 Inferensi LLM lokal
  []
 
 
-Underfull \hbox (badness 2884) in paragraph at lines 128--128
-[]\TU/TimesNewRoman(0)/m/n/12 RAG menghasilkan
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+\TU/TimesNewRoman(0)/m/n/12 bebani memori sistem
  []
 
 
-Underfull \hbox (badness 2165) in paragraph at lines 128--128
-[]\TU/TimesNewRoman(0)/m/n/12 Penjelasan menyesatk-
+Underfull \hbox (badness 3861) in paragraph at lines 11--12
+\TU/TimesNewRoman(0)/m/n/12 2. Menggunakan layanan
  []
 
 
-Underfull \hbox (badness 5345) in paragraph at lines 128--128
-[]\TU/TimesNewRoman(0)/m/n/12 Perbaikan knowledge base,
+Underfull \hbox (badness 4846) in paragraph at lines 14--14
+[]\TU/TimesNewRoman(0)/m/n/12 Data input manual
  []
 
 
-Underfull \hbox (badness 4013) in paragraph at lines 129--129
-[]\TU/TimesNewRoman(0)/m/n/12 Integrasi DT kom-
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+\TU/TimesNewRoman(0)/m/n/12 tidak konsisten
  []
 
 
-Underfull \hbox (badness 2096) in paragraph at lines 129--129
-[]\TU/TimesNewRoman(0)/m/n/12 Pendekatan bertahap, mulai
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+[]\TU/TimesNewRoman(0)/m/n/12 Akurasi prediksi LSTM
  []
 
-[37]
+
+Underfull \hbox (badness 4569) in paragraph at lines 15--15
+\TU/TimesNewRoman(0)/m/n/12 menurun karena \TU/TimesNewRoman(0)/m/it/12 missing
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]\TU/TimesNewRoman(0)/m/n/12 Halusinasi pada
+ []
+
+
+Underfull \hbox (badness 3623) in paragraph at lines 24--24
+\TU/TimesNewRoman(0)/m/n/12 hanya pada sumber terper-
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 24--24
+\TU/TimesNewRoman(0)/m/n/12 DA) dan menurunkan para-
+ []
+
+
+Overfull \hbox (7.54723pt too wide) in paragraph at lines 5--27
+ [][] 
+ []
+
+)
 File: image/gantt-chart.png Graphic file (type bmp)
 <image/gantt-chart.png>
- [38]) [39
-
+) [43] [44] [45
 
 
 ]
+Overfull \hbox (6.1626pt too wide) in paragraph at lines 400--400
+\TU/TimesNewRoman(0)/m/n/12 betes: A Systematic Review”. \TU/TimesNewRoman(0)/m
+/it/12 IEEE Reviews in Biomedical Engineering \TU/TimesNewRoman(0)/m/n/12 17:16
+6–
+ []
+
+
 Overfull \hbox (6.39394pt too wide) in paragraph at lines 400--400
 \TU/TimesNewRoman(0)/m/n/12 Undesirable Emergent Behavior in Complex Systems”. 
 Dalam \TU/TimesNewRoman(0)/m/it/12 Transdisciplinary
@@ -1818,18 +1806,18 @@ Overfull \hbox (11.021pt too wide) in paragraph at lines 400--400
 sNewRoman(0)/m/it/12 Indonesia Diabetes Devices (SMBG & POCT,
  []
 
-[40]
+[46]
 Overfull \hbox (10.5415pt too wide) in paragraph at lines 400--400
 \TU/TimesNewRoman(0)/m/n/12 Monitoring Blood Glucose Devices in Indonesia”. \TU
 /TimesNewRoman(0)/m/it/12 PLOS ONE \TU/TimesNewRoman(0)/m/n/12 19 (10): e030935
-0.[] 
+0.
  []
 
 
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 380.
 See the caption package documentation for explanation.
 
-[41] (18222003_ProposalTA.aux)
+[47] (18222003_ProposalTA.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1839,22 +1827,22 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `18222003_ProposalTA.out' has not changed.
-(rerunfilecheck)             Checksum: 9A979F7F3558A23BADD469F02FD1128A;10039.
+(rerunfilecheck)             Checksum: C650FEBAF27D4BF76087A743DE517F8A;11482.
 
 Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
 
 Package logreq Info: Writing requests to '18222003_ProposalTA.run.xml'.
 \openout1 = `18222003_ProposalTA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31491 strings out of 409617
- 619827 string characters out of 5774215
- 1969894 words of memory out of 5000000
- 53226 multiletter control sequences out of 15000+600000
- 563266 words of font info for 79 fonts, out of 8000000 for 9000
+ 31550 strings out of 409617
+ 621062 string characters out of 5774215
+ 1970910 words of memory out of 5000000
+ 53274 multiletter control sequences out of 15000+600000
+ 565013 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,11n,93p,1277b,7945s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,11n,93p,1856b,7944s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on c:/Users\Asus\Documents\__KULIAH\Semester 7\Proposal TA\Propo
-salTA\18222003_ProposalTA.pdf (49 pages).
+Output written on 18222003_ProposalTA.pdf (55 pages).

@@ -59,6 +59,9 @@
       \field{year}{2020}
       \field{pages}{98\bibrangedash 107}
       \range{pages}{10}
+      \verb{doi}
+      \verb 10.1177/1833358319887257
+      \endverb
     \endentry
     \entry{Aisyah2024}{article}{}
       \name{author}{7}{}{%
@@ -123,6 +126,9 @@
       \field{year}{2024}
       \field{pages}{e55959}
       \range{pages}{-1}
+      \verb{doi}
+      \verb 10.2196/55959
+      \endverb
     \endentry
     \entry{Alkaff2021}{article}{}
       \name{author}{4}{}{%
@@ -174,6 +180,41 @@
       \verb 10.35500/jghs.2021.3.e25
       \endverb
     \endentry
+    \entry{ADA2023}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=88b85efc67bbb8c15d8d7c3802cc9233}{%
+           family={{American Diabetes Association}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Diabetes Association}%
+      }
+      \strng{namehash}{88b85efc67bbb8c15d8d7c3802cc9233}
+      \strng{fullhash}{88b85efc67bbb8c15d8d7c3802cc9233}
+      \strng{bibnamehash}{88b85efc67bbb8c15d8d7c3802cc9233}
+      \strng{authorbibnamehash}{88b85efc67bbb8c15d8d7c3802cc9233}
+      \strng{authornamehash}{88b85efc67bbb8c15d8d7c3802cc9233}
+      \strng{authorfullhash}{88b85efc67bbb8c15d8d7c3802cc9233}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Diabetes Care}
+      \field{number}{Supplement 1}
+      \field{title}{Standards of Care in Diabetes—2023}
+      \field{volume}{46}
+      \field{year}{2023}
+      \field{pages}{S1\bibrangedash S291}
+      \range{pages}{-1}
+      \verb{urlraw}
+      \verb https://diabetesjournals.org/care/issue/46/Supplement_1
+      \endverb
+      \verb{url}
+      \verb https://diabetesjournals.org/care/issue/46/Supplement_1
+      \endverb
+    \endentry
     \entry{Battelino2019}{article}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -211,14 +252,19 @@
       \field{labeltitlesource}{author}
       \field{journaltitle}{Diabetes Care}
       \field{number}{8}
-      \field{title}{Clinical Targets for Continuous Glucose Monitoring Data Interpretation}
+      \field{title}{Clinical Targets for Continuous Glucose Monitoring Data Interpretation: Recommendations From the International Consensus on Time in Range}
       \field{volume}{42}
       \field{year}{2019}
       \field{pages}{1593\bibrangedash 1603}
       \range{pages}{11}
+      \verb{doi}
+      \verb 10.2337/dci19-0028
+      \endverb
     \endentry
     \entry{Borgeaud2022}{article}{}
-      \name{author}{26}{}{%
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=c28d74501d531d6672ccf4c28016c7ac}{%
            family={Borgeaud},
            familyi={B\bibinitperiod},
@@ -243,151 +289,13 @@
            given={Trevor},
            giveni={T\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=5cc07c10e9f1ef5fae367662553d982c}{%
-           family={Rutherford},
-           familyi={R\bibinitperiod},
-           given={Eliza},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=da626c813aa81825001015989a23f850}{%
-           family={Millican},
-           familyi={M\bibinitperiod},
-           given={Katie},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=54c5c572d4fdc5d822c240b59fcadad4}{%
-           family={Driessche},
-           familyi={D\bibinitperiod},
-           given={George},
-           giveni={G\bibinitperiod},
-           givenun=0,
-           prefix={van\bibnamedelima den},
-           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
-           prefixun=0}}%
-        {{un=0,uniquepart=base,hash=a444aafc3cc0fa1bbe095e57d43927ba}{%
-           family={Lespiau},
-           familyi={L\bibinitperiod},
-           given={Jean-Baptiste},
-           giveni={J\bibinithyphendelim B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4da5c824138e58f9def8fd792b5ad94f}{%
-           family={Damoc},
-           familyi={D\bibinitperiod},
-           given={Bogdan},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b06242c53973106520ab19f8e1fc3799}{%
-           family={Clark},
-           familyi={C\bibinitperiod},
-           given={Aidan},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=47f81e65396e1d91b7ab70d59f69329b}{%
-           family={Las\bibnamedelima Casas},
-           familyi={L\bibinitperiod\bibinitdelim C\bibinitperiod},
-           given={Diego},
-           giveni={D\bibinitperiod},
-           givenun=0,
-           prefix={de},
-           prefixi={d\bibinitperiod},
-           prefixun=0}}%
-        {{un=0,uniquepart=base,hash=8bc2c63cf1c4c6e9e4d317839dda4de2}{%
-           family={Guy},
-           familyi={G\bibinitperiod},
-           given={Aurelia},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=5d3255f46b9e59e322e3fba6ce3daa11}{%
-           family={Menick},
-           familyi={M\bibinitperiod},
-           given={Jacob},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=50349f5d4ef065e417356ee70e0f7069}{%
-           family={Ring},
-           familyi={R\bibinitperiod},
-           given={Roman},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=0c1f2b1cf15f9e15216a9e652512bf6f}{%
-           family={Hennigan},
-           familyi={H\bibinitperiod},
-           given={Tom},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ee67aa6d9e4eb1cb3d3f541c2dcff21f}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Saffron},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=568d990b0fac005a8ce386e878096ceb}{%
-           family={Maggiore},
-           familyi={M\bibinitperiod},
-           given={Loren},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f5e3bc5ee6025ef3a58750c6498c5553}{%
-           family={Jones},
-           familyi={J\bibinitperiod},
-           given={Chris},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3aa9da052c0a148d4d2813363cb56a56}{%
-           family={Trebacz},
-           familyi={T\bibinitperiod},
-           given={Maja},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3f4edf388f37681e40b60b4673c8b12a}{%
-           family={Paquet},
-           familyi={P\bibinitperiod},
-           given={Ulrich},
-           giveni={U\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f02bf7127a7a7eb2043fda73006dfc61}{%
-           family={Coppin},
-           familyi={C\bibinitperiod},
-           given={Ben},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=481308b301166b521c74fde6566e97e6}{%
-           family={Kavukcuoglu},
-           familyi={K\bibinitperiod},
-           given={Koray},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=494b568c5dc85ba8f3f409635f9c5f25}{%
-           family={Vinyals},
-           familyi={V\bibinitperiod},
-           given={Oriol},
-           giveni={O\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8dcdeb16ef3c68cf8396226668804fe0}{%
-           family={Rae},
-           familyi={R\bibinitperiod},
-           given={Jack\bibnamedelima W.},
-           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=6aa92a937d4d30dd0b5ec0eecbad1bf1}{%
-           family={Elsen},
-           familyi={E\bibinitperiod},
-           given={Erich},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=50d24de916599d306c5cb1a77156e4b9}{%
-           family={Sifre},
-           familyi={S\bibinitperiod},
-           given={Laurent},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
       }
       \strng{namehash}{1d5b54954d5e123c297f4250ee59711c}
-      \strng{fullhash}{988c9545ca1c0d9f118d5fa7cdc65942}
-      \strng{bibnamehash}{510c0064f48584c7ffe13ec6cb42b6bf}
-      \strng{authorbibnamehash}{510c0064f48584c7ffe13ec6cb42b6bf}
+      \strng{fullhash}{6c454a2da19c48ff44df9d8a9946c510}
+      \strng{bibnamehash}{6c454a2da19c48ff44df9d8a9946c510}
+      \strng{authorbibnamehash}{6c454a2da19c48ff44df9d8a9946c510}
       \strng{authornamehash}{1d5b54954d5e123c297f4250ee59711c}
-      \strng{authorfullhash}{988c9545ca1c0d9f118d5fa7cdc65942}
+      \strng{authorfullhash}{6c454a2da19c48ff44df9d8a9946c510}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
@@ -447,6 +355,9 @@
       \field{year}{2018}
       \field{pages}{31}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.3389/fgene.2018.00066
+      \endverb
     \endentry
     \entry{Cappon2024}{article}{}
       \name{author}{3}{}{%
@@ -481,13 +392,64 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{author}
-      \field{journaltitle}{npj Digital Medicine}
-      \field{number}{1}
+      \field{journaltitle}{IEEE Reviews in Biomedical Engineering}
       \field{title}{Digital Twins in Type 1 Diabetes: A Systematic Review}
-      \field{volume}{7}
+      \field{volume}{17}
       \field{year}{2024}
-      \field{pages}{55\bibrangedash 68}
-      \range{pages}{14}
+      \field{pages}{166\bibrangedash 180}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/RBME.2023.3296229
+      \endverb
+    \endentry
+    \entry{Colberg2016}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b19bc3f87d9794cab4f091336f9d0eb5}{%
+           family={Colberg},
+           familyi={C\bibinitperiod},
+           given={Sheri\bibnamedelima R},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ccd7472873d509e5445716d5e6e48f22}{%
+           family={Sigal},
+           familyi={S\bibinitperiod},
+           given={Ronald\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8331c6857fdabf5a35d157811e1e1296}{%
+           family={Yardley},
+           familyi={Y\bibinitperiod},
+           given={Jane\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Diabetes Association}%
+      }
+      \strng{namehash}{919f1c7458c33bd217ebca60e31e6861}
+      \strng{fullhash}{919f1c7458c33bd217ebca60e31e6861}
+      \strng{bibnamehash}{919f1c7458c33bd217ebca60e31e6861}
+      \strng{authorbibnamehash}{919f1c7458c33bd217ebca60e31e6861}
+      \strng{authornamehash}{919f1c7458c33bd217ebca60e31e6861}
+      \strng{authorfullhash}{919f1c7458c33bd217ebca60e31e6861}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Diabetes Care}
+      \field{number}{11}
+      \field{title}{Physical activity/exercise and diabetes: a position statement of the American Diabetes Association}
+      \field{volume}{39}
+      \field{year}{2016}
+      \field{pages}{2065\bibrangedash 2079}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.2337/dc16-1728
+      \endverb
     \endentry
     \entry{Ghimire2024}{article}{}
       \true{moreauthor}
@@ -534,12 +496,6 @@
       \verb{doi}
       \verb 10.1038/s41746-024-01021-0
       \endverb
-      \verb{urlraw}
-      \verb https://www.nature.com/articles/s41746-024-01021-0
-      \endverb
-      \verb{url}
-      \verb https://www.nature.com/articles/s41746-024-01021-0
-      \endverb
     \endentry
     \entry{grieves2017digital}{incollection}{}
       \name{author}{2}{}{%
@@ -583,6 +539,47 @@
       \verb 10.1007/978-3-319-38756-7_4
       \endverb
     \endentry
+    \entry{Hackett2017}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5b27adc1fd4b10168378ea96469798a1}{%
+           family={Hackett},
+           familyi={H\bibinitperiod},
+           given={Ruth\bibnamedelima A},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c7ebc4b3b789336037fc20ef180b935}{%
+           family={Steptoe},
+           familyi={S\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{84ef936119ce9517f2950d045dce650a}
+      \strng{fullhash}{84ef936119ce9517f2950d045dce650a}
+      \strng{bibnamehash}{84ef936119ce9517f2950d045dce650a}
+      \strng{authorbibnamehash}{84ef936119ce9517f2950d045dce650a}
+      \strng{authornamehash}{84ef936119ce9517f2950d045dce650a}
+      \strng{authorfullhash}{84ef936119ce9517f2950d045dce650a}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Nature Reviews Endocrinology}
+      \field{number}{10}
+      \field{title}{Psychosocial stress and type 2 diabetes: current knowledge and future concepts}
+      \field{volume}{13}
+      \field{year}{2017}
+      \field{pages}{547\bibrangedash 560}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1038/nrendo.2017.87
+      \endverb
+    \endentry
     \entry{Harahap2023}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=e67b6c55e89e9611b24e80c5b4d0478a}{%
@@ -622,6 +619,9 @@
       \field{year}{2023}
       \field{pages}{e44784}
       \range{pages}{-1}
+      \verb{doi}
+      \verb 10.2196/44784
+      \endverb
     \endentry
     \entry{Harahap2024}{article}{}
       \name{author}{4}{}{%
@@ -668,6 +668,9 @@
       \field{year}{2024}
       \field{pages}{199}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s12913-024-10694-y
+      \endverb
     \endentry
     \entry{IDF2024}{report}{}
       \name{author}{1}{}{%
@@ -696,6 +699,12 @@
       \field{title}{IDF Diabetes Atlas 11th Edition}
       \field{type}{techreport}
       \field{year}{2024}
+      \verb{urlraw}
+      \verb https://diabetesatlas.org/
+      \endverb
+      \verb{url}
+      \verb https://diabetesatlas.org/
+      \endverb
     \endentry
     \entry{Riskesdas2018}{report}{}
       \name{author}{1}{}{%
@@ -725,10 +734,10 @@
       \field{title}{Laporan Nasional Riset Kesehatan Dasar (Riskesdas) 2018}
       \field{year}{2019}
       \verb{urlraw}
-      \verb https://www.litbang.kemkes.go.id/laporan-riset-kesehatan-dasar-riskesdas-2018/
+      \verb https://repository.badankebijakan.kemkes.go.id/id/eprint/3514/
       \endverb
       \verb{url}
-      \verb https://www.litbang.kemkes.go.id/laporan-riset-kesehatan-dasar-riskesdas-2018/
+      \verb https://repository.badankebijakan.kemkes.go.id/id/eprint/3514/
       \endverb
     \endentry
     \entry{KSI2020}{report}{}
@@ -752,6 +761,12 @@
       \field{title}{Indonesia Diabetes Devices (SMBG \& POCT, CGM, Insulin Pens \& Pumps) Market Outlook to 2023}
       \field{type}{techreport}
       \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.knowledge-sourcing.com/report/indonesia-diabetes-devices-market
+      \endverb
+      \verb{url}
+      \verb https://www.knowledge-sourcing.com/report/indonesia-diabetes-devices-market
+      \endverb
     \endentry
     \entry{Lewis2020}{article}{}
       \name{author}{12}{}{%
@@ -896,6 +911,9 @@
       \field{year}{2022}
       \field{pages}{4150\bibrangedash 4162}
       \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/JBHI.2022.3181751
+      \endverb
     \endentry
     \entry{Rad2024}{article}{}
       \name{author}{4}{}{%
@@ -943,6 +961,9 @@
       \field{year}{2024}
       \field{pages}{359}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/jpm14040359
+      \endverb
     \endentry
     \entry{Ramadaniati2024}{article}{}
       \name{author}{5}{}{%
@@ -996,6 +1017,9 @@
       \field{year}{2024}
       \field{pages}{e0309350}
       \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pone.0309350
+      \endverb
     \endentry
     \entry{Woldaregay2019}{article}{}
       \true{moreauthor}
@@ -1038,6 +1062,9 @@
       \field{year}{2019}
       \field{pages}{109\bibrangedash 134}
       \range{pages}{26}
+      \verb{doi}
+      \verb 10.1016/j.artmed.2019.07.004
+      \endverb
     \endentry
     \entry{WHO2023}{report}{}
       \name{author}{1}{}{%
@@ -1066,6 +1093,12 @@
       \field{title}{Global Report on Diabetes}
       \field{type}{techreport}
       \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.who.int/health-topics/diabetes
+      \endverb
+      \verb{url}
+      \verb https://www.who.int/health-topics/diabetes
+      \endverb
     \endentry
     \entry{Zhang2024}{article}{}
       \true{moreauthor}
@@ -1096,6 +1129,9 @@
       \field{year}{2024}
       \field{pages}{1336050}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.3389/fdgth.2024.1336050
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
